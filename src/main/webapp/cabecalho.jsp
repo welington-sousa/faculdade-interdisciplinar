@@ -5,17 +5,17 @@
 <head>
 	<title>Camisas Criativas ${produto.nome}</title>
 	
-	<link href='<c:url value="/resources/css/loja.css"/>' rel="stylesheet" />
-	<link href='<c:url value="/resources/css/jquery-ui.css"/>' rel="stylesheet" />
-	<link href='<c:url value="/resources/css/bootstrap.css"/>' rel="stylesheet" />
+	<link href='<c:url value="/resources/css/loja-min.css"/>' rel="stylesheet" />
+	<link href='<c:url value="/resources/css/jquery-ui-min.css"/>' rel="stylesheet" />
+	<link href='<c:url value="/resources/css/bootstrap-min.css"/>' rel="stylesheet" />
 	
 	<!-- icone do topo -->
 	<link href='<c:url value="/resources/img/logo.png"/>' rel="shortcut icon" sizes="144x144" />
 	
 	<script src='<c:url value="/resources/js/jquery.min.js"/>'></script>
-	<script src='<c:url value="/resources/js/jquery-ui.js"/>'></script>
+	<script src='<c:url value="/resources/js/jquery-ui-min.js"/>'></script>
 	<script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
-	<script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>
+	<script src='<c:url value="/resources/js/inputmask-plugin-min.js"/>'></script>
 </head>
 <body>
 	<div class="container">
@@ -31,7 +31,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					
-					<a class="navbar-brand" href="#">Camisas Criativas</a>
+					<a class="navbar-brand" href='<c:url value="/" />'>Camisas Criativas</a>
 				</div>
 		
 				<div>
@@ -42,19 +42,22 @@
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href='<c:url value="/produtos" />'>
-									<span class="glyphicon glyphicon-list-alt"></span>
-									Roupas Femininas</a></li>
-								<li><a href="#">
-									<span class="glyphicon glyphicon-list-alt"></span>
-									Roupas Masculinas</a></li>
+								<li>
+									<a href='<c:url value="/produtos" />'>
+										<span class="glyphicon glyphicon-list-alt"></span>
+										Roupas Femininas
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-list-alt"></span>	Roupas Masculinas
+									</a>
+								</li>
+								<li class="divider"></li>
 								<li><a href="#">
 									<span class="glyphicon glyphicon-list-alt"></span>
 									Roupas Infatis</a></li>
-								<li class="divider"></li>
-								<li><a href='<c:url value="/" />'>
-									<span class="glyphicon glyphicon-home"></span>
-									Inicio </a></li>
 							</ul>
 						</li>
 					</ul>
@@ -112,8 +115,8 @@
 						</li>
 					</ul>
 		
-					<form action="http://www.google.com.br/search" target="brank" class="navbar-form navbar-right">
-						<input type="search" class="form-control" id="busca" placeholder="Busca..." required>
+					<form action='<c:url value="/produtos/busca" />' class="navbar-form navbar-right">
+						<input type="search" class="form-control" name="nome" id="busca" placeholder="Buscar por produtos" required>
 					</form>
 				</div>
 			</div>
