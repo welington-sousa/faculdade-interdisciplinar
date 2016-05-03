@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<ol class="breadcrumb">
 				<li>
-					<a href="#">© Camisas Criativas</a>
+					<a href='<c:url value="/" />'>© 2016 Camisas Criativas</a>
 				</li>
 			</ol>
 			
