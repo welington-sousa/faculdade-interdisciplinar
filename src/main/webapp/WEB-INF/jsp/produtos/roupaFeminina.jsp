@@ -1,8 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div class="container loja">
 	<section class="secao novidades">
-		<h2>Novidades</h2>
-
 		<ol>
 			<c:forEach items="${produtoList}" var="produto">
 				<li>
@@ -23,8 +21,6 @@
 	</section>
 
 	<section class="secao promocoes">
-		<h2>Promoções</h2>
-
 		<ol>
 			<c:forEach items="${produtoList}" var="produto">
 				<li>
