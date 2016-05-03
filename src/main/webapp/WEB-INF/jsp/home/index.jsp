@@ -7,7 +7,7 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item">
-				<img class="first-slide" src="resources/img/produtos/destaque-home-2.png" alt="First slide">
+				<img class="first-slide" src="resources/img/destaque-home-2.png" alt="First slide">
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>Bem vindo, a Camisas Criativas</h1>
@@ -30,7 +30,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img class="second-slide" src="resources/img/produtos/destaque-home.png" alt="Second slide">
+				<img class="second-slide" src="resources/img/destaque-home.png" alt="Second slide">
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>Bem vindo, a Camisas Criativas</h1>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="item active">
-				<img class="third-slide" src="resources/img/produtos/destaque-home.png" alt="Third slide">
+				<img class="third-slide" src="resources/img/destaque-home.png" alt="Third slide">
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>Bem vindo, a Camisas Criativas</h1>
