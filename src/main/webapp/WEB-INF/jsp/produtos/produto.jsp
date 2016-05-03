@@ -1,101 +1,38 @@
 <div class="container loja">
-	<div class="produto">
-		<h1>${produto.nome}</h1>
-
-		<p>
-			por apenas
-			<fmt:formatNumber type="currency" 
-			value="${produto.preco}" />
-		</p>
-
-		<form action='${linkTo[CarrinhoController].adiciona}' method="post">
-			<fieldset class="cores">
+	<div class="col-sm-6 col-md-3">
+		<a class="thumbnail" href="#">
+		<img src="../resources/img/produtos/foto${produto.id}-verde.png" 
+    	width="370" height="484" alt="Camisa">
+		</a>
+	</div>
 			
-				<legend>Escolha a cor:</legend>
+	<div class="col-md-5">
+    	<img src="../resources/img/produtos/foto${produto.id}-verde.png" 
+    	width="370" height="484" alt="Camisa">
+    </div>
 
-				<input type="radio" name="cor" value="verde" id="verde" checked>
+    <form action='${linkTo[CarrinhoController].adiciona}' method="post">
+	    <div class="col-md-4">
+			<h1>${produto.nome}</h1>
 				
-				<label for="verde"> 
-					<img src="../resources/img/produtos/foto${produto.id}-verde.png"
-						 width="370" height="484" 
-						 alt="Produto da cor verde">
-				</label> 
-				
-				<input type="radio" name="cor" value="rosa" id="rosa"> 
-				
-				<label for="rosa"> 
-					<img src="../resources/img/produtos/foto${produto.id}-rosa.png" 
-						 width="370" height="484"
-						 alt="Produto da cor rosa">
-				</label>
-				
-				<input type="radio" name="cor" value="azul" id="azul"> 
-				
-				<label for="azul"> 
-					<img src="../resources/img/produtos/foto${produto.id}-azul.png" 
-						 width="370" height="484"
-						 alt="Produto da cor azul">
-				</label>
-			</fieldset>
+			<p>	apenas <fmt:formatNumber type="currency" value="${produto.preco}" /></p>
 
 			<fieldset class="tamanhos">
-
-				<legend>Escolha o tamanho:</legend>
-
-				<input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
-				<output for="tamanho" name="valortamanho">42</output>
+				<output name="valortamanho" for="tamanho">P</output>
+	  			<output name="valortamanho" for="tamanho">M</output>
+	  			<output name="valortamanho" for="tamanho">G</output>
+	  			<output name="valortamanho" for="tamanho">GG</output>
 			</fieldset>
-			
+
 			<fieldset>
-				<legend>Quantidade:</legend>
-			
 				<input type="hidden" name="item.produto.id" value="${produto.id}" />
 				<input type="number" class="form-control" name="item.quantidade" value="1" required />
 			</fieldset>
-			
-			<button type="submit" class="comprar">
-				<span class="glyphicon glyphicon-ok"></span> Comprar
+
+			<button class="comprar btn-danger btn-block" type="submit">
+				<span class="glyphicon glyphicon-ok"></span> 
+				Carrinho de Compras
 			</button>
-		</form>
-	</div>
-
-	<div class="detalhes">
-		<h2>Detalhes do Produto</h2>
-
-		<p>${produto.descricao}</p>
-
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Característica</th>
-					<th>Detalhe</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Modelo</td>
-					<td>Cardigã 7845</td>
-				</tr>
-				<tr>
-					<td>Material</td>
-					<td>Algodão e poliester</td>
-				</tr>
-				<tr>
-					<td>Cores</td>
-					<td>Azul, Rosa e Verde</td>
-				</tr>
-				<tr>
-					<td>Lavagem</td>
-					<td>Lavar a mão</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+		</div>
+	</form>	
 </div>
-<script type="text/javascript">
-	$('[name=valortamanho]').val($('[name=tamanho]').val());
-	
-	$('[name=tamanho]').on('input', function() {
-		$('[name=valortamanho]').val(this.value);
-	});
-</script>
