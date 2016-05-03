@@ -8,7 +8,6 @@
 	<link href='<c:url value="/resources/css/loja.css"/>' rel="stylesheet" />
 	<link href='<c:url value="/resources/css/jquery-ui.css"/>' rel="stylesheet" />
 	<link href='<c:url value="/resources/css/bootstrap.css"/>' rel="stylesheet" />
-	<link href='<c:url value="/resources/css/reset.css"/>' rel="stylesheet" />
 	
 	<!-- icone do topo -->
 	<link href='<c:url value="/resources/img/logo.png"/>' rel="shortcut icon" sizes="144x144" />
