@@ -7,7 +7,7 @@
 	
 	<link href='<c:url value="/resources/css/loja-min.css"/>' rel="stylesheet" />
 	<link href='<c:url value="/resources/css/jquery-ui-min.css"/>' rel="stylesheet" />
-	<link href='<c:url value="/resources/css/bootstrap-min.css"/>' rel="stylesheet" />
+	<link href='<c:url value="/resources/css/bootstrap.min.css"/>' rel="stylesheet" />
 	
 	<!-- icone do topo -->
 	<link href='<c:url value="/resources/img/logo.png"/>' rel="shortcut icon" sizes="144x144" />
