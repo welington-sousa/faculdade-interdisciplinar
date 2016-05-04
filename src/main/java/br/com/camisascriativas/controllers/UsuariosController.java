@@ -27,6 +27,6 @@ public class UsuariosController {
 		dao.salva(usuario);
 		validator.onErrorUsePageOf(this).novo();
 
-		result.redirectTo(ProdutosController.class).camisas();
+		result.redirectTo(CamisasController.class).camisas();
 	}
 }

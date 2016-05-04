@@ -24,7 +24,7 @@ public class LoginController {
 	public void autentica(Usuario usuario) {
 		logado.login(dao.carrega(usuario.getLogin()));
 
-		result.redirectTo(ProdutosController.class).camisas();
+		result.redirectTo(CamisasController.class).camisas();
 	}
 
 	@Get("/logout")

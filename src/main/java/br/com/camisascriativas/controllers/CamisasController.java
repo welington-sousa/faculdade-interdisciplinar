@@ -14,7 +14,7 @@ import br.com.camisascriativas.models.Camisa;
 
 @Controller
 @Path("/produtos")
-public class ProdutosController {
+public class CamisasController {
 	@Inject
 	private CamisaDao dao;
 	@Inject
