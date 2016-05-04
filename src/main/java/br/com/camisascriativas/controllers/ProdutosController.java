@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.annotation.RestrictMethod;
 import br.com.camisascriativas.daos.ProdutoDao;
 import br.com.camisascriativas.models.Produto;
@@ -15,6 +16,7 @@ import br.com.camisascriativas.models.Produto;
 @Path("/produtos")
 public class ProdutosController {
 	@Inject private ProdutoDao dao;
+	@Inject private Result result;
 
 	@Get("")
 	public List<Produto> camisas() {
@@ -22,8 +24,8 @@ public class ProdutosController {
 	}
 	
 	@Get("/camisas")
-	public List<Produto> femininas() {
-		return this.camisas();
+	public void femininas() {
+		this.result.redirectTo(this).camisas();
 	}
 
 	@RestrictMethod @Get("/{id}")

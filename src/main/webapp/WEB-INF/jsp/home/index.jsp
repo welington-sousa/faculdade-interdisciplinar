@@ -87,7 +87,7 @@
 
 	<div class="row">
 		<div class="col-sm-6 col-md-4">
-			<a href='<c:url value="/produtos" />' class="thumbnail"> 
+			<a href='${linkTo[ProdutosController].femininas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura3.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
