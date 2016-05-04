@@ -115,7 +115,7 @@
 						</li>
 					</ul>
 		
-					<form action='<c:url value="/produtos/busca" />' class="navbar-form navbar-right">
+					<form action='${linkTo[CamisasController].busca}' class="navbar-form navbar-right">
 						<input type="search" class="form-control" name="nome" id="busca" placeholder="Buscar por produtos" required>
 					</form>
 				</div>
