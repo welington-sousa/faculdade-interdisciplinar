@@ -42,4 +42,8 @@ public class CamisasController {
 	public Camisa produto(Long id) {
 		return this.dao.buscaPorId(id);
 	}
+	
+	public List<Camisa> busca(String nome) {
+		return dao.buscaProdutosPor(nome);
+	}
 }
