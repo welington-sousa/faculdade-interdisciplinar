@@ -97,7 +97,7 @@
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<a href='${linkTo[ProdutosController].crianca}' class="thumbnail"> 
+			<a href='${linkTo[ProdutosController].criancas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura6.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>

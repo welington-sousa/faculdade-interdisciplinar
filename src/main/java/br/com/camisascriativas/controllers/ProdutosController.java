@@ -15,30 +15,30 @@ import br.com.camisascriativas.models.Produto;
 @Controller
 @Path("/produtos")
 public class ProdutosController {
-	@Inject private ProdutoDao dao;
-	@Inject private Result result;
+	@Inject
+	private ProdutoDao dao;
+	@Inject
+	private Result result;
 
 	@Get("")
 	public List<Produto> camisas() {
 		return this.dao.listaTudo();
 	}
-	
-	@Get("/camisas")
+
 	public void femininas() {
 		this.result.redirectTo(this).camisas();
 	}
-	
-	@Get("/camisas")
+
 	public void masculinas() {
 		this.result.redirectTo(this).camisas();
 	}
 	
-	@Get("/camisas")
 	public void criancas() {
 		this.result.redirectTo(this).camisas();
 	}
-	
-	@RestrictMethod @Get("/{id}")
+
+	@RestrictMethod
+	@Get("/{id}")
 	public Produto produto(Long id) {
 		return this.dao.buscaPorId(id);
 	}
