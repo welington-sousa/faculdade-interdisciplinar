@@ -2,16 +2,16 @@
 <div class="container loja">
 	<section class="secao novidades">
 		<ol>
-			<c:forEach items="${produtoList}" var="produto">
+			<c:forEach var="camisa" items="${camisaList}">
 				<li>
 					<figure>
-						<a href='<c:url value="/produtos/${produto.id}"/>'> 
-							<img title="${produto.nome}" alt="${produto.nome}" 
-								 src="resources/img/produtos/miniatura${produto.id}.png">
+						<a href='<c:url value="/camisas/${camisa.id}"/>'> 
+							<img title="${camisa.nome}" alt="${camisa.nome}" 
+								 src="resources/img/produtos/miniatura${camisa.id}.png">
 								 
 							<figcaption>
-								${produto.nome} por <fmt:formatNumber type="currency" 
-								value="${produto.preco}" />
+								${camisa.nome} por <fmt:formatNumber type="currency" 
+								value="${camisa.preco}" />
 							</figcaption>
 						</a>
 					</figure>
@@ -22,16 +22,16 @@
 
 	<section class="secao promocoes">
 		<ol>
-			<c:forEach items="${produtoList}" var="produto">
+			<c:forEach var="camisa" items="${camisaList}">
 				<li>
 					<figure>
-						<a href='<c:url value="/produtos/${produto.id}"/>'> 
-							<img title="${produto.nome}" alt="${produto.nome}" 
-								 src="resources/img/produtos/miniatura${produto.id}.png">
+						<a href='<c:url value="/camisas/${camisa.id}"/>'> 
+							<img title="${camisa.nome}" alt="${camisa.nome}" 
+								 src="resources/img/produtos/miniatura${camisa.id}.png">
 								 
 							<figcaption>
-								${produto.nome} por <fmt:formatNumber type="currency" 
-								value="${produto.preco}" />
+								${camisa.nome} por <fmt:formatNumber type="currency" 
+								value="${camisa.preco}" />
 							</figcaption>
 						</a>
 					</figure>
