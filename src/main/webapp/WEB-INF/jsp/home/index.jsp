@@ -87,7 +87,7 @@
 
 	<div class="row">
 		<div class="col-sm-6 col-md-4">
-			<a href="#" class="thumbnail"> 
+			<a href='<c:url value="/produtos" />' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura3.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
