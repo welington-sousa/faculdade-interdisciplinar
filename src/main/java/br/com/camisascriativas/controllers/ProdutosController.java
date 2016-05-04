@@ -9,14 +9,14 @@ import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.annotation.RestrictMethod;
-import br.com.camisascriativas.daos.ProdutoDao;
+import br.com.camisascriativas.daos.CamisaDao;
 import br.com.camisascriativas.models.Camisa;
 
 @Controller
 @Path("/produtos")
 public class ProdutosController {
 	@Inject
-	private ProdutoDao dao;
+	private CamisaDao dao;
 	@Inject
 	private Result result;
 

@@ -7,7 +7,7 @@ import javax.persistence.EntityManager;
 
 import br.com.camisascriativas.models.Camisa;
 
-public class ProdutoDao {
+public class CamisaDao {
 	@Inject private EntityManager manager;
 
 	public List<Camisa> listaTudo() {
