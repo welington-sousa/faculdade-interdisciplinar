@@ -21,7 +21,7 @@ public class ProdutosController {
 		return this.dao.listaTudo();
 	}
 	
-	public List<Produto> camisasFemininas() {
+	public List<Produto> femininas() {
 		return this.camisas();
 	}
 
