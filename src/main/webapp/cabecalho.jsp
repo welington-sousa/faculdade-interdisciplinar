@@ -8,6 +8,7 @@
 	<link href='<c:url value="/resources/css/loja-min.css"/>' rel="stylesheet" />
 	<link href='<c:url value="/resources/css/jquery-ui-min.css"/>' rel="stylesheet" />
 	<link href='<c:url value="/resources/css/bootstrap.min.css"/>' rel="stylesheet" />
+	<link href='<c:url value="/resources/css/jquery.autocomplete.css"/>' rel="stylesheet" />
 	
 	<!-- icone do topo -->
 	<link href='<c:url value="/resources/img/logo.png"/>' rel="shortcut icon" sizes="144x144" />
@@ -16,6 +17,7 @@
 	<script src='<c:url value="/resources/js/jquery-ui-min.js"/>'></script>
 	<script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
 	<script src='<c:url value="/resources/js/inputmask-plugin-min.js"/>'></script>
+	<script src='<c:url value="/resources/js/jquery.autocomplete.min.js"/>'></script>
 </head>
 <body>
 	<div class="container">
