@@ -17,8 +17,12 @@ public class ProdutosController {
 	@Inject private ProdutoDao dao;
 
 	@Get("")
-	public List<Produto> roupaFeminina() {
+	public List<Produto> camisas() {
 		return this.dao.listaTudo();
+	}
+	
+	public List<Produto> camisasFemininas() {
+		return this.camisas();
 	}
 
 	@RestrictMethod @Get("/{id}")
