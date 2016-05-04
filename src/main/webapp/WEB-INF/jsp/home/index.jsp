@@ -87,17 +87,17 @@
 
 	<div class="row">
 		<div class="col-sm-6 col-md-4">
-			<a href='${linkTo[ProdutosController].femininas}' class="thumbnail"> 
+			<a href='${linkTo[CamisasController].femininas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura3.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<a href='${linkTo[ProdutosController].masculinas}' class="thumbnail"> 
+			<a href='${linkTo[CamisasController].masculinas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura2.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<a href='${linkTo[ProdutosController].criancas}' class="thumbnail"> 
+			<a href='${linkTo[CamisasController].criancas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura6.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
