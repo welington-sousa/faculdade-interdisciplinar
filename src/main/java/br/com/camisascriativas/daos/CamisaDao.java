@@ -21,7 +21,7 @@ public class CamisaDao {
 
 	public List<Camisa> buscaCamisasPor(String nome) {
 		return manager
-				.createQuery("from Camisa c where lower(p.nome) like lower(:nome)", Camisa.class)
+				.createQuery("from Camisa c where lower(c.nome) like lower(:nome)", Camisa.class)
 				.setParameter("nome", nome)
 				.getResultList();
 	}
