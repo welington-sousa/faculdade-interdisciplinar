@@ -92,12 +92,12 @@
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<a href="#" class="thumbnail"> 
+			<a href='${linkTo[ProdutosController].masculinas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura2.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<a href="#" class="thumbnail"> 
+			<a href='${linkTo[ProdutosController].crianca}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura6.png" alt="Generic placeholder thumbnail">
 			</a>
 		</div>
