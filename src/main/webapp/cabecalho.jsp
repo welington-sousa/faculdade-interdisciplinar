@@ -43,7 +43,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href='<c:url value="/produtos" />'>
+									<a href='${linkTo[ProdutosController].femininas}'>
 										<span class="glyphicon glyphicon-list-alt"></span>
 										Roupas Femininas
 									</a>

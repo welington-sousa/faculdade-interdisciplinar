@@ -21,6 +21,7 @@ public class ProdutosController {
 		return this.dao.listaTudo();
 	}
 	
+	@Get("/camisas")
 	public List<Produto> femininas() {
 		return this.camisas();
 	}
