@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Camisas Criativas ${produto.nome}</title>
+	<title>Camisas Criativas ${camisa.nome}</title>
 	
 	<link href='<c:url value="/resources/css/loja-min.css"/>' rel="stylesheet" />
 	<link href='<c:url value="/resources/css/jquery-ui-min.css"/>' rel="stylesheet" />
@@ -45,7 +45,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href='${linkTo[ProdutosController].femininas}'>
+									<a href='${linkTo[CamisasController].femininas}'>
 										<span class="glyphicon glyphicon-list-alt"></span>
 										Roupas Femininas
 									</a>
