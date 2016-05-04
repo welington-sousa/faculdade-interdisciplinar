@@ -11,8 +11,8 @@ public class CamisaDao {
 	@Inject private EntityManager manager;
 
 	public List<Camisa> listaTudo() {
-		String jpql = "select p from Produto p order by id desc";
-		return manager.createQuery(jpql, Camisa.class).setMaxResults(9).getResultList();
+		return manager.createQuery("from Camisa c order by id desc", 
+				Camisa.class).setMaxResults(9).getResultList();
 	}
 
 	public Camisa buscaPorId(Long id) {
