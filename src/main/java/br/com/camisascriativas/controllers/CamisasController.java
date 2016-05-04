@@ -46,4 +46,8 @@ public class CamisasController {
 	public List<Camisa> busca(String nome) {
 		return dao.buscaCamisasPor(nome);
 	}
+	
+	public void buscaNome() {
+		this.result.redirectTo(this).camisas();
+	}
 }
