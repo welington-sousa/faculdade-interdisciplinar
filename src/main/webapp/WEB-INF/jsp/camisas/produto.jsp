@@ -13,7 +13,7 @@
 
     <form action='${linkTo[CarrinhoController].adiciona}' method="post">
 	    <div class="col-md-4">
-			<h1>${produto.nome}</h1>
+			<h1>${camisa.nome}</h1>
 				
 			<p>	apenas <fmt:formatNumber type="currency" value="${camisa.preco}" /></p>
 
