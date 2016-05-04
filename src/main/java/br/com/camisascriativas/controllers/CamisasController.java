@@ -13,7 +13,7 @@ import br.com.camisascriativas.daos.CamisaDao;
 import br.com.camisascriativas.models.Camisa;
 
 @Controller
-@Path("/produtos")
+@Path("/camisas")
 public class CamisasController {
 	@Inject
 	private CamisaDao dao;
