@@ -1,13 +1,13 @@
 <div class="container loja">
 	<div class="col-sm-6 col-md-3">
 		<a class="thumbnail" href="#">
-		<img src="../resources/img/produtos/foto${produto.id}-verde.png" 
+		<img src="../resources/img/produtos/foto${camisa.id}-verde.png" 
     	width="370" height="484" alt="Camisa">
 		</a>
 	</div>
 			
 	<div class="col-md-5">
-    	<img src="../resources/img/produtos/foto${produto.id}-verde.png" 
+    	<img src="../resources/img/produtos/foto${camisa.id}-verde.png" 
     	width="370" height="484" alt="Camisa">
     </div>
 
@@ -15,7 +15,7 @@
 	    <div class="col-md-4">
 			<h1>${produto.nome}</h1>
 				
-			<p>	apenas <fmt:formatNumber type="currency" value="${produto.preco}" /></p>
+			<p>	apenas <fmt:formatNumber type="currency" value="${camisa.preco}" /></p>
 
 			<fieldset class="tamanhos">
 				<output name="valortamanho" for="tamanho">P</output>
@@ -25,7 +25,7 @@
 			</fieldset>
 
 			<fieldset>
-				<input type="hidden" name="item.produto.id" value="${produto.id}" />
+				<input type="hidden" name="item.produto.id" value="${camisa.id}" />
 				<input type="number" class="form-control" name="item.quantidade" value="1" required />
 			</fieldset>
 
