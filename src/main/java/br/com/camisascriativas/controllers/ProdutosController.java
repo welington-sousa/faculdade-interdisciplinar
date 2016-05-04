@@ -27,7 +27,17 @@ public class ProdutosController {
 	public void femininas() {
 		this.result.redirectTo(this).camisas();
 	}
-
+	
+	@Get("/camisas")
+	public void masculinas() {
+		this.result.redirectTo(this).camisas();
+	}
+	
+	@Get("/camisas")
+	public void criancas() {
+		this.result.redirectTo(this).camisas();
+	}
+	
 	@RestrictMethod @Get("/{id}")
 	public Produto produto(Long id) {
 		return this.dao.buscaPorId(id);
