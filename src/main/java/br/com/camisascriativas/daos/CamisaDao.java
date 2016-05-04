@@ -18,4 +18,11 @@ public class CamisaDao {
 	public Camisa buscaPorId(Long id) {
 		return manager.find(Camisa.class, id);
 	}
+
+	public List<Camisa> buscaCamisasPor(String nome) {
+		return manager
+				.createQuery("from Camisa c where lower(p.nome) like lower(:nome)", Camisa.class)
+				.setParameter("nome", nome)
+				.getResultList();
+	}
 }

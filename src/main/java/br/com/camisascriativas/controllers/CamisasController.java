@@ -44,6 +44,6 @@ public class CamisasController {
 	}
 	
 	public List<Camisa> busca(String nome) {
-		return dao.buscaProdutosPor(nome);
+		return dao.buscaCamisasPor(nome);
 	}
 }
