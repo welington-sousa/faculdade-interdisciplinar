@@ -10,7 +10,7 @@ import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.annotation.RestrictMethod;
 import br.com.camisascriativas.daos.ProdutoDao;
-import br.com.camisascriativas.models.Produto;
+import br.com.camisascriativas.models.Camisa;
 
 @Controller
 @Path("/produtos")
@@ -21,7 +21,7 @@ public class ProdutosController {
 	private Result result;
 
 	@Get("")
-	public List<Produto> camisas() {
+	public List<Camisa> camisas() {
 		return this.dao.listaTudo();
 	}
 
@@ -39,7 +39,7 @@ public class ProdutosController {
 
 	@RestrictMethod
 	@Get("/{id}")
-	public Produto produto(Long id) {
+	public Camisa produto(Long id) {
 		return this.dao.buscaPorId(id);
 	}
 }

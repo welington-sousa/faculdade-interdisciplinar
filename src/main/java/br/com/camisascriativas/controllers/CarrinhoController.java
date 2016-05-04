@@ -13,7 +13,7 @@ import br.com.caelum.vraptor.validator.SimpleMessage;
 import br.com.caelum.vraptor.validator.Validator;
 import br.com.camisascriativas.models.Carrinho;
 import br.com.camisascriativas.models.Item;
-import br.com.camisascriativas.models.Produto;
+import br.com.camisascriativas.models.Camisa;
 
 @Controller
 @Path("/carrinho")
@@ -33,7 +33,7 @@ public class CarrinhoController {
 				new SimpleMessage("Quantidade precisa ter número positivo", "item.quantidade"));
 		validator.onErrorUsePageOf(this).checkout();
 
-		Produto produtoCompleto = manager.find(Produto.class, item.getProduto().getId());
+		Camisa produtoCompleto = manager.find(Camisa.class, item.getProduto().getId());
 		item.setProduto(produtoCompleto);
 		carrinho.adiciona(item);
 		

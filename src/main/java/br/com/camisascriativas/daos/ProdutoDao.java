@@ -5,17 +5,17 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
-import br.com.camisascriativas.models.Produto;
+import br.com.camisascriativas.models.Camisa;
 
 public class ProdutoDao {
 	@Inject private EntityManager manager;
 
-	public List<Produto> listaTudo() {
+	public List<Camisa> listaTudo() {
 		String jpql = "select p from Produto p order by id desc";
-		return manager.createQuery(jpql, Produto.class).setMaxResults(9).getResultList();
+		return manager.createQuery(jpql, Camisa.class).setMaxResults(9).getResultList();
 	}
 
-	public Produto buscaPorId(Long id) {
-		return manager.find(Produto.class, id);
+	public Camisa buscaPorId(Long id) {
+		return manager.find(Camisa.class, id);
 	}
 }

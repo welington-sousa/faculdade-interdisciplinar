@@ -1,14 +1,14 @@
 package br.com.camisascriativas.models;
 
 public class Item {
-	private Produto produto;
+	private Camisa produto;
 	private Integer quantidade;
 
-	public Produto getProduto() {
+	public Camisa getProduto() {
 		return produto;
 	}
 
-	public void setProduto(Produto produto) {
+	public void setProduto(Camisa produto) {
 		this.produto = produto;
 	}
 
