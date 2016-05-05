@@ -92,16 +92,25 @@
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].femininas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura3.png" alt="Generic placeholder thumbnail">
+				<button type="submit" class="comprar btn-danger btn-block">
+					<span class="glyphicon glyphicon-music"></span> Música
+			  </button>
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].masculinas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura2.png" alt="Generic placeholder thumbnail">
+				<button type="submit" class="comprar btn-danger btn-block">
+					<span class="glyphicon glyphicon-film"></span> Cinema
+			  </button>
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].criancas}' class="thumbnail"> 
 				<img src="resources/img/produtos/miniatura6.png" alt="Generic placeholder thumbnail">
+				<button type="submit" class="comprar btn-danger btn-block">
+					<span class="glyphicon glyphicon-book"></span> Literatura
+			  </button>
 			</a>
 		</div>
 	</div>
