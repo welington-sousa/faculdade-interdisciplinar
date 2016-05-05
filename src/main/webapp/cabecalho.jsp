@@ -68,12 +68,12 @@
 						<li>
 							<a title="carrinho de compras" href='<c:url value="/carrinho"/>'>
 								<c:if test="${empty carrinho or carrinho.totalDeItens eq 0 }">
-									0
-									<img height="20" width="20" src="resources/img/sacola.png">
+									<b>0</b>
+									<span class="glyphicon glyphicon-shopping-cart"></span>
 								</c:if>
 								<c:if test="${carrinho.totalDeItens > 0}"> 
-									${carrinho.totalDeItens}
-									<img height="20" width="20" src="resources/img/sacola.png">
+									<b>${carrinho.totalDeItens}</b>
+									<span class="glyphicon glyphicon-shopping-cart"></span>
 								</c:if>
 							</a>
 						</li>							
@@ -82,7 +82,7 @@
 								<li class="active">
 										
 									<a href='#' title="logar no sistema" class="dropdown-toggle" data-toggle="dropdown"> 
-										<i class="glyphicon glyphicon-user"></i> UserName
+										<i class="glyphicon glyphicon-user"></i> Olá
 										<span class="caret"></span>
 									</a>
 									
@@ -100,7 +100,7 @@
 								<li class="active">
 										
 									<a href='#' title="logar no sistema" class="dropdown-toggle" data-toggle="dropdown"> 
-										<i class="glyphicon glyphicon-user"></i> ${usuarioLogado.nome}
+										<i class="glyphicon glyphicon-user"></i> Olá, ${usuarioLogado.nome}
 										<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
