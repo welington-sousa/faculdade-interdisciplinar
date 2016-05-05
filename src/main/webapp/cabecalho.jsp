@@ -73,7 +73,7 @@
 								</c:if>
 								<c:if test="${carrinho.totalDeItens > 0}"> 
 									${carrinho.totalDeItens}
-									<span class="glyphicon glyphicon-shopping-cart"></span>
+									<img height="20" width="20" src="resources/img/sacola.png">
 								</c:if>
 							</a>
 						</li>							
