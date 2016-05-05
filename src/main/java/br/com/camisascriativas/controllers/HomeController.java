@@ -12,7 +12,6 @@ public class HomeController {
 
 	@Path("/")
 	public void index() {
-		result.include("msg", "Cadastre-se e aproveite nossas promoções para este mês. "
-				+ "Além disso, quando faz cadastro em nossa loja você fica por dentro de nossas novidade.");
+		result.include("msg", "Camisas Criativas");
 	}
 }
