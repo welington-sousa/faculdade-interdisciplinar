@@ -31,7 +31,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					
-					<a class="navbar-brand" href='<c:url value="/" />'>Camisas Criativas</a>
+					<a class="navbar-brand" href='${linkTo[HomeController].index}'>
+					Camisas Criativas</a>
 				</div>
 		
 				<div>
