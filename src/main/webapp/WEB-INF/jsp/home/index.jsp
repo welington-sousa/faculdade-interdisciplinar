@@ -11,8 +11,6 @@
 				alt="First slide" width="944.15" height="480">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Bem vindo, a Camisas Criativas</h1>
-
 						<p class="lead">
 							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
 				    		${msg}
@@ -35,8 +33,6 @@
 				alt="Second slide" width="944.15" height="480">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Bem vindo, a Camisas Criativas</h1>
-
 						<p class="lead">
 							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
 					    		${msg}
@@ -58,8 +54,6 @@
 				alt="Third slide" width="944.15" height="480">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Bem vindo, a Camisas Criativas</h1>
-
 						<p class="lead">
 							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
 				    			${msg}
