@@ -69,7 +69,7 @@
 							<a title="carrinho de compras" href='<c:url value="/carrinho"/>'>
 								<c:if test="${empty carrinho or carrinho.totalDeItens eq 0 }">
 									0
-									<span class="glyphicon glyphicon-shopping-cart"></span>
+									<img height="20" width="20" src="resources/img/sacola.png">
 								</c:if>
 								<c:if test="${carrinho.totalDeItens > 0}"> 
 									${carrinho.totalDeItens}
