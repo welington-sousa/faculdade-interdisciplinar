@@ -1,28 +1,24 @@
-<link href='<c:url value="/resources/css/login.css"/>' rel="stylesheet" />
+<link href='<c:url value="/resources/css/login-min.css"/>' rel="stylesheet" />
 
 <div class="container loja">
-	<form action='${linkTo[LoginController].autentica}' 
-		class="form-signin" method="post">
-		<h2 class="form-signin-heading">Fazer login</h2>
+	<form action='${linkTo[LoginController].autentica}' class="form-signin" method="post">
+		<h2 class="form-signin-heading">Efetuar login</h2>
 
 		<label for="login" class="sr-only">Login</label>
 		<input type="text" name="usuario.login" id="login" 
-			class="form-control"
-			placeholder="Digite seu login" required autofocus>
+			class="form-control" placeholder="Digite seu login" required autofocus>
 			
 		<label for="senha" class="sr-only">Password</label>
-		<input type="password" name="usuario.senha" id="senha" 
-			class="form-control"
+		<input type="password" name="usuario.senha" id="senha" class="form-control"
 			placeholder="Digite sua senha" required>
 
 		<div class="checkbox">
 			<label>
-				<input type="checkbox" value="remember-me">
-				Lembrar minha senha
+				<input type="checkbox" value="remember-me"> Lembrar minha senha
 			</label>
 		</div>
 
-		<button class="btn btn-lg btn-primary btn-block" 
+		<button class="btn btn-lg btn-danger btn-block" 
 			type="submit"> Logar
 		</button>
 	</form>
