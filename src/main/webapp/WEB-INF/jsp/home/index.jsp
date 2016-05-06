@@ -85,7 +85,8 @@
 	<div class="row">
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].femininas}' class="thumbnail"> 
-				<img class="first-slide" src="resources/img/musician.jpg">
+				<img class="first-slide" width="284.717" height="213.533"
+				src="resources/img/musician.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-music"></span> Música
 			  </button>
@@ -93,7 +94,8 @@
 		</div>
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].masculinas}' class="thumbnail"> 
-				<img class="first-slide" src="resources/img/airship.jpg">
+				<img class="first-slide" width="284.717" height="213.533" 
+				src="resources/img/airship.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-film"></span> Cinema
 			  </button>
@@ -101,7 +103,8 @@
 		</div>
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].criancas}' class="thumbnail"> 
-				<img class="first-slide" src="resources/img/knowledge.jpg">
+				<img class="first-slide" width="284.717" height="213.533" 
+				src="resources/img/knowledge.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-book"></span> Literatura
 			  </button>
