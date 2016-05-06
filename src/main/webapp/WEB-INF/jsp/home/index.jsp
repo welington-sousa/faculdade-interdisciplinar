@@ -7,8 +7,10 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item">
-				<img class="first-slide" src="resources/img/musician.jpg" 
-				alt="First slide" width="944.15" height="480">
+				<a href='${linkTo[CamisasController].femininas}'> 
+					<img class="first-slide" src="resources/img/musician.jpg" 
+					alt="First slide" width="944.15" height="480">
+				</a>
 				<div class="container">
 					<div class="carousel-caption">
 						<p class="lead">
@@ -29,8 +31,10 @@
 				</div>
 			</div>
 			<div class="item">
-				<img class="second-slide" src="resources/img/airship.jpg" 
-				alt="Second slide" width="944.15" height="480">
+				<a href='${linkTo[CamisasController].femininas}'>
+					<img class="second-slide" src="resources/img/airship.jpg" 
+					alt="Second slide" width="944.15" height="480">
+				</a>
 				<div class="container">
 					<div class="carousel-caption">
 						<p class="lead">
@@ -50,8 +54,10 @@
 				</div>
 			</div>
 			<div class="item active">
-				<img class="third-slide" src="resources/img/knowledge.jpg" 
-				alt="Third slide" width="944.15" height="480">
+				<a href='${linkTo[CamisasController].femininas}'>
+					<img class="third-slide" src="resources/img/knowledge.jpg" 
+					alt="Third slide" width="944.15" height="480">
+				</a>	
 				<div class="container">
 					<div class="carousel-caption">
 						<p class="lead">
