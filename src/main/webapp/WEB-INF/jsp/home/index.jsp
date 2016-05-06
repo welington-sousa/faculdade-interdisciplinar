@@ -7,7 +7,7 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item">
-				<img class="first-slide" src="resources/img/destaque-home-2.png" 
+				<img class="first-slide" src="resources/img/musician.jpg" 
 				alt="First slide" width="944.15" height="480">
 				<div class="container">
 					<div class="carousel-caption">
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img class="second-slide" src="resources/img/destaque-home.png" 
+				<img class="second-slide" src="resources/img/airship.jpg" 
 				alt="Second slide" width="944.15" height="480">
 				<div class="container">
 					<div class="carousel-caption">
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 			<div class="item active">
-				<img class="third-slide" src="resources/img/destaque-home.png" 
+				<img class="third-slide" src="resources/img/knowledge.jpg" 
 				alt="Third slide" width="944.15" height="480">
 				<div class="container">
 					<div class="carousel-caption">
@@ -85,7 +85,7 @@
 	<div class="row">
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].femininas}' class="thumbnail"> 
-				<img src="resources/img/produtos/miniatura3.png" alt="Generic placeholder thumbnail">
+				<img class="first-slide" src="resources/img/musician.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-music"></span> Música
 			  </button>
@@ -93,7 +93,7 @@
 		</div>
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].masculinas}' class="thumbnail"> 
-				<img src="resources/img/produtos/miniatura2.png" alt="Generic placeholder thumbnail">
+				<img class="first-slide" src="resources/img/airship.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-film"></span> Cinema
 			  </button>
@@ -101,7 +101,7 @@
 		</div>
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].criancas}' class="thumbnail"> 
-				<img src="resources/img/produtos/miniatura6.png" alt="Generic placeholder thumbnail">
+				<img class="first-slide" src="resources/img/knowledge.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-book"></span> Literatura
 			  </button>
