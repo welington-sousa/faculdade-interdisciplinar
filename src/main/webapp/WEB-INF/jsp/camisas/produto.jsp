@@ -1,8 +1,8 @@
 <div class="container loja">
 	<div class="col-sm-6 col-md-3">
 		<a class="thumbnail" href="#">
-		<img src="../resources/img/produtos/foto${camisa.id}-verde.png" 
-    	width="370" height="484" alt="Camisa">
+		<img style="height: auto;" width="370" height="484" alt="Camisa" 
+		src="../resources/img/produtos/foto${camisa.id}-verde.png">
 		</a>
 	</div>
 			
