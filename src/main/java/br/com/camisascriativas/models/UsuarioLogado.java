@@ -11,25 +11,21 @@ public class UsuarioLogado implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private Usuario usuario;
+	private Usuario logado;
 
 	public void login(Usuario usuario) {
-		this.usuario = usuario;
+		this.logado = usuario;
 	}
 
 	public String getNome() {
-		return usuario.getNome();
-	}
-
-	public void logout() {
-		this.usuario = null;
+		return this.logado.getNome();
 	}
 
 	public boolean isLogado() {
-		return this.usuario != null;
+		return this.logado != null;
 	}
 
-	public Usuario getUsuario() {
-		return this.usuario;
+	public void logout() {
+		this.logado = null;
 	}
 }

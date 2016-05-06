@@ -10,7 +10,7 @@
 		placeholder="Seu nome" value="${usuario.nome}" required autofocus>
 			   
 		<input type="text" class="required form-control" id="login" name="usuario.login"
-		placeholder="Nome de usúario" value="${usuario.login}" required>
+		placeholder="Nome de usúario" value="${usuario.login}">
 			   
 		<input type="password" class="required form-control" id="senha" name="usuario.senha"   
 		placeholder="Senha" value="${usuario.senha}" required>

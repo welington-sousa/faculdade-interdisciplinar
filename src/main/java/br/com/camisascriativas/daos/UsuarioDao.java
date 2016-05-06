@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import br.com.camisascriativas.models.Usuario;
 
 public class UsuarioDao {
+
 	@Inject
 	private EntityManager manager;
 
@@ -13,12 +14,8 @@ public class UsuarioDao {
 		manager.persist(usuario);
 	}
 
-	public Usuario carrega(String login) {
-		return manager.createQuery("from Usuario u where u.login=:login", Usuario.class).setParameter("login", login)
-				.getSingleResult();
-	}
-
-	public boolean existe(Usuario usuario) {
-		return carrega(usuario.getLogin()) != null;
+	public Usuario existeUsuarioComLogin(String login) {
+		return manager.createQuery("from Usuario u where u.login=:login", Usuario.class)
+				.setParameter("login", login).getSingleResult();
 	}
 }

@@ -12,9 +12,12 @@ import br.com.camisascriativas.models.UsuarioLogado;
 
 @Controller
 public class LoginController {
-	@Inject private UsuarioLogado logado;
-	@Inject private UsuarioDao dao;
-	@Inject private Result result;
+	@Inject
+	private UsuarioLogado logado;
+	@Inject
+	private UsuarioDao dao;
+	@Inject
+	private Result result;
 
 	@Get("login/autentica")
 	public void loginForm() {
