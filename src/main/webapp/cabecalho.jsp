@@ -83,7 +83,7 @@
 								<li class="active">
 										
 									<a href='#' title="logar no sistema" class="dropdown-toggle" data-toggle="dropdown"> 
-										<i class="glyphicon glyphicon-user"></i> Olá
+										<i class="glyphicon glyphicon-user"></i> Você não está logado
 										<span class="caret"></span>
 									</a>
 									
