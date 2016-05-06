@@ -28,10 +28,9 @@ public class UsuariosController {
 
 	@Post("")
 	public void adiciona(Usuario usuario) {
-		validator.addIf(dao.existe(usuario), new SimpleMessage("Login já existe", "usuario.login"));
-		dao.salva(usuario);
+		validator.addIf(dao.existe(usuario), new SimpleMessage("usuário já existe", "usuario.login"));
 		validator.onErrorUsePageOf(this).novo();
-
+		dao.salva(usuario);
 		result.redirectTo(CamisasController.class).camisas();
 	}
 }

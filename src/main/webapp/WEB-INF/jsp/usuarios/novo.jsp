@@ -1,6 +1,9 @@
 <link href='<c:url value="/resources/css/login-min.css"/>' rel="stylesheet" />
 <div class="container loja">
-	<form class="form-signin" id="usuariosForm" action='<c:url value="/usuarios" />' method="post">
+	<c:forEach var="error" items="${errors}">
+		<li class="alert alert-danger">Opá, ${error.category} - ${error.message}.</li>
+	</c:forEach>
+	<form class="form-signin" id="usuariosForm" action='${linkTo[UsuariosController].adiciona}' method="post">
 		<h2 class="form-signin-heading">Criar novo usuário</h2>
 		
 		<input type="text" class="required form-control" id="nome" name="usuario.nome"  
@@ -15,7 +18,7 @@
 		<input type="password" class="form-control" equalTo="#senha"  id="confirmacao" 
 		placeholder="Confirme a senha" required>
 		
-		<button class="btn btn-lg btn-danger btn-block" type="submit"> Enviar</button>	   
+		<button class="btn btn-lg btn-default btn-block" type="submit"> Enviar</button>	   
 	</form>
 </div>
 <script>

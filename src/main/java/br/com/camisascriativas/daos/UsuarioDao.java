@@ -14,7 +14,7 @@ public class UsuarioDao {
 	}
 
 	public Usuario carrega(String login) {
-		return manager.createQuery("u from Usuario u where u.login=:login", Usuario.class).setParameter("login", login)
+		return manager.createQuery("from Usuario u where u.login=:login", Usuario.class).setParameter("login", login)
 				.getSingleResult();
 	}
 
