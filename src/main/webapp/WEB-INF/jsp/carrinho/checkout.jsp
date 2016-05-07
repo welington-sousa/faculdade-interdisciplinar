@@ -1,4 +1,7 @@
 <div class="container loja">
+	<c:forEach var="error" items="${errors}">
+		<li class="alert alert-danger">${errors.from('item.quantidade')}</li>
+	</c:forEach>
 	<div class="col-sm-3 col-md-4 sidebar">
 		<div class="panel panel-default">
 			<c:forEach items="${carrinho.itens}" var="item" varStatus="s">
