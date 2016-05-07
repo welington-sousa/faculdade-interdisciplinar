@@ -11,11 +11,11 @@ import javax.persistence.Id;
 @Entity
 public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	@Column(unique = true)
-	private String login;
+	@Column(unique = true) private String login;
 	private String senha;
 	private String email;
 
