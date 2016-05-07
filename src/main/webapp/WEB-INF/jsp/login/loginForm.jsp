@@ -10,10 +10,6 @@
 		<input type="password" name="usuario.senha" id="senha" class="form-control"
 		placeholder="Digite sua senha" required>
 
-		<button class="btn btn-lg btn-danger btn-block" 
-			type="submit"> Logar
-		</button>
+		<button class="btn btn-lg btn-danger btn-block" type="submit">Logar</button>
 	</form>
 </div>
-
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
