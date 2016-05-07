@@ -16,7 +16,7 @@ import br.com.cc.validators.UsuarioValidator;
 public class UsuariosController {
 	@Inject private UsuarioDao dao;
 	@Inject private Result result;
-	@Inject UsuarioValidator validator;
+	@Inject private UsuarioValidator validator;
 
 	@Get("/novo") public void novo() {}
 
