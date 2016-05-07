@@ -14,16 +14,11 @@ import br.com.camisascriativas.models.UsuarioValidator;
 @Controller
 @Path("/usuarios")
 public class UsuariosController {
-	@Inject
-	private UsuarioDao dao;
-	@Inject
-	private Result result;
-	@Inject
-	UsuarioValidator validator;
+	@Inject private UsuarioDao dao;
+	@Inject private Result result;
+	@Inject UsuarioValidator validator;
 
-	@Get("/novo")
-	public void novo() {
-	}
+	@Get("/novo") public void novo() {}
 
 	@Post("")
 	public void adiciona(Usuario usuario) {
