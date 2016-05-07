@@ -1,7 +1,9 @@
 package br.com.camisascriativas.models;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.enterprise.context.SessionScoped;
@@ -10,29 +12,31 @@ import javax.inject.Named;
 @SessionScoped
 @Named
 public class Carrinho implements Serializable {
-	private static final long serialVersionUID = -3247589140522700560L;
+	
+	private static final long serialVersionUID = 1L;
+
 	private List<Item> itens = new ArrayList<Item>();
-	private Double total = 0.0;
+	private BigDecimal total = BigDecimal.ZERO;
 
 	public void adiciona(Item item) {
 		itens.add(item);
-		total += item.getProduto().getPreco().doubleValue() * item.getQuantidade();
+		total = total.add(item.getValor());
 	}
 
 	public Integer getTotalDeItens() {
 		return itens.size();
 	}
 
-	public Double getTotal() {
+	public BigDecimal getTotal() {
 		return total;
 	}
 
 	public List<Item> getItens() {
-		return itens;
+		return Collections.unmodifiableList(itens);
 	}
 
 	public void remove(int indiceItem) {
 		Item removido = itens.remove(indiceItem);
-		total -= removido.getProduto().getPreco().doubleValue() * removido.getQuantidade();
+		total = total.subtract(removido.getValor());
 	}
 }
