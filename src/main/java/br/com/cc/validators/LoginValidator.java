@@ -12,9 +12,8 @@ public class LoginValidator {
 	
 	public void validate(Usuario usuario) {
 		validator.validate(usuario);
-		
-		if (usuario.getLogin() == null) 
-			validator.add(new I18nMessage("usuario.login", "usuario.nome.vazio"));
+		validator.addIf(usuario.getLogin() == null, 
+				new I18nMessage("usuario.login", "usuario.nome.vazio"));
 	}
 	
 	public <T> T onErrorRedirectTo(T controller) {
