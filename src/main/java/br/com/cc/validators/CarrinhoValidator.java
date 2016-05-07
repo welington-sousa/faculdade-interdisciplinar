@@ -1,9 +1,10 @@
-package br.com.camisascriativas.models;
+package br.com.cc.validators;
 
 import javax.inject.Inject;
 
 import br.com.caelum.vraptor.validator.I18nMessage;
 import br.com.caelum.vraptor.validator.Validator;
+import br.com.camisascriativas.models.Item;
 
 public class CarrinhoValidator {
 

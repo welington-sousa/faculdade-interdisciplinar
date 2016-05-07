@@ -9,7 +9,7 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.daos.UsuarioDao;
 import br.com.camisascriativas.models.Usuario;
-import br.com.camisascriativas.models.UsuarioValidator;
+import br.com.cc.validators.UsuarioValidator;
 
 @Controller
 @Path("/usuarios")
