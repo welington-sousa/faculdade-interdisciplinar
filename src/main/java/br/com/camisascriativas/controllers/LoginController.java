@@ -12,27 +12,20 @@ import br.com.camisascriativas.models.UsuarioLogado;
 
 @Controller
 public class LoginController {
-	@Inject
-	private UsuarioLogado logado;
-	@Inject
-	private UsuarioDao dao;
-	@Inject
-	private Result result;
+	
+	@Inject private UsuarioLogado logado;
+	@Inject private UsuarioDao dao;
+	@Inject private Result result;
 
-	@Get("login/autentica")
-	public void loginForm() {
-	}
+	@Get("login/autentica") public void loginForm() {}
 
 	@Post("/autentica")
 	public void autentica(Usuario usuario) {
 		logado.login(dao.carrega(usuario.getLogin()));
-
 		result.redirectTo(CamisasController.class).camisas();
 	}
 
-	@Get("/logout")
-	public void sair() {
-		logado.logout();
+	@Get("/logout") public void sair() { logado.logout();
 		result.redirectTo(HomeController.class).index();
 	}
 }
