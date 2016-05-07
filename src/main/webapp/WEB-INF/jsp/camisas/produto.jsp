@@ -29,7 +29,7 @@
 				<input type="number" class="form-control" name="item.quantidade" value="1" required />
 			</fieldset>
 
-			<button class="comprar btn-danger btn-block" type="submit">
+			<button class="comprar btn-default btn-block" type="submit">
 				<span class="glyphicon glyphicon-ok"></span> 
 				Carrinho de Compras
 			</button>
