@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -17,7 +16,6 @@ public class Usuario implements Serializable {
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@NotNull(message="{usuario.nome.vazio}") 
 	@Size(min=3, max=8, message="{usuario.nome.tamanho}")
 	private String nome;
 	@Column(unique = true) private String login;
