@@ -1,11 +1,13 @@
 <link href='<c:url value="/resources/css/login-min.css"/>' rel="stylesheet" />
 <div class="container loja">
+	<c:forEach var="error" items="${errors}">
 	<div class="alert alert-danger alert-dismissable">
 		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
 			&times;
 		</button>
 		${errors.from('usuario.login')}.
 	</div>
+	</c:forEach>
 	<form class="form-signin" id="usuariosForm" action='${linkTo[UsuariosController].adiciona}' method="post">
 		<h2 class="form-signin-heading">Criar novo usuário</h2>
 		
