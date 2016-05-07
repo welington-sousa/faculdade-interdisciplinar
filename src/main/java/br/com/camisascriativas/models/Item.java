@@ -1,15 +1,18 @@
 package br.com.camisascriativas.models;
 
+import java.math.BigDecimal;
+
 public class Item {
-	private Camisa produto;
+	
+	private Camisa camisa;
 	private Integer quantidade;
 
 	public Camisa getProduto() {
-		return produto;
+		return camisa;
 	}
 
-	public void setProduto(Camisa produto) {
-		this.produto = produto;
+	public void setProduto(Camisa camisa) {
+		this.camisa = camisa;
 	}
 
 	public Integer getQuantidade() {
@@ -18,5 +21,9 @@ public class Item {
 
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
+	}
+	
+	public BigDecimal getValor() {
+		return camisa.getPreco().multiply(new BigDecimal(quantidade));
 	}
 }
