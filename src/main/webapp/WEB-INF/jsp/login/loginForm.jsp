@@ -5,7 +5,7 @@
 		<h2 class="form-signin-heading">Efetuar login</h2>
 
 		<input type="text" name="usuario.login" id="login" class="form-control"
-		placeholder="Digite seu login" autofocus>
+		placeholder="Nome de usuário" autofocus>
 			
 		<input type="password" name="usuario.senha" id="senha" class="form-control"
 		placeholder="Digite sua senha">
