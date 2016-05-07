@@ -11,9 +11,9 @@ import br.com.camisascriativas.daos.UsuarioDao;
 import br.com.camisascriativas.models.Usuario;
 import br.com.cc.validators.UsuarioValidator;
 
-@Controller
-@Path("/usuarios")
+@Controller @Path("/usuarios")
 public class UsuariosController {
+	
 	@Inject private UsuarioDao dao;
 	@Inject private Result result;
 	@Inject private UsuarioValidator validator;
