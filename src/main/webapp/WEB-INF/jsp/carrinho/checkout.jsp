@@ -1,8 +1,13 @@
 <div class="container loja">
-	<c:forEach var="error" items="${errors}">
-		<li class="alert alert-danger">${errors.from('item.quantidade')}</li>
-	</c:forEach>
 	<div class="col-sm-3 col-md-4 sidebar">
+	<c:forEach var="error" items="${errors}">
+	<div class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+			&times;
+		</button>
+		${errors.from('item.quantidade')}.
+	</div>
+	</c:forEach>
 		<div class="panel panel-default">
 			<c:forEach items="${carrinho.itens}" var="item" varStatus="s">
 				<div class="panel-body">
