@@ -11,71 +11,18 @@
 					<img class="first-slide" src="resources/img/musician.jpg" 
 					alt="First slide" width="944.15" height="480">
 				</a>
-				<div class="container">
-					<div class="carousel-caption">
-						<p class="lead">
-							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-				    		${msg}
-				    	</c:if>
-						</p>
-
-						<p>
-							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-								<a role="button" href='${linkTo[UsuariosController].novo}'
-									class="btn btn-ms btn-danger"> 
-									<span class="glyphicon glyphicon-hand-right"></span> Cadastre-se
-								</a>
-							</c:if>
-						</p>
-					</div>
-				</div>
 			</div>
 			<div class="item">
 				<a href='${linkTo[CamisasController].femininas}'>
 					<img class="second-slide" src="resources/img/airship.jpg" 
 					alt="Second slide" width="944.15" height="480">
 				</a>
-				<div class="container">
-					<div class="carousel-caption">
-						<p class="lead">
-							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-					    		${msg}
-					    	</c:if>
-						</p>
-						<p>
-							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-								<a role="button" href='${linkTo[UsuariosController].novo}'
-									class="btn btn-ms btn-danger"> 
-									<span class="glyphicon glyphicon-hand-right"></span> Cadastre-se
-								</a>
-							</c:if>
-						</p>
-					</div>
-				</div>
 			</div>
 			<div class="item active">
 				<a href='${linkTo[CamisasController].femininas}'>
-					<img class="third-slide" src="resources/img/knowledge.jpg" 
+					<img class="third-slide" src="resources/img/news.png" 
 					alt="Third slide" width="944.15" height="480">
 				</a>	
-				<div class="container">
-					<div class="carousel-caption">
-						<p class="lead">
-							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-				    			${msg}
-					    	</c:if>
-						</p>
-
-						<p>
-							<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-								<a role="button" href='${linkTo[UsuariosController].novo}'
-									class="btn btn-ms btn-danger"> 
-									<span class="glyphicon glyphicon-hand-right"></span> Cadastre-se
-								</a>
-							</c:if>
-						</p>
-					</div>
-				</div>
 			</div>
 		</div>
 		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

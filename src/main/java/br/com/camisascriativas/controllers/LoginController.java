@@ -9,7 +9,7 @@ import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.daos.UsuarioDao;
 import br.com.camisascriativas.models.Usuario;
 import br.com.camisascriativas.models.UsuarioLogado;
-import br.com.cc.validators.LoginValidator;
+import br.com.camisascriativas.validators.LoginValidator;
 
 @Controller
 public class LoginController {

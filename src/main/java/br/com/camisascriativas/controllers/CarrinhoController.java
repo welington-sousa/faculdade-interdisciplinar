@@ -12,7 +12,7 @@ import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.models.Camisa;
 import br.com.camisascriativas.models.Carrinho;
 import br.com.camisascriativas.models.Item;
-import br.com.cc.validators.CarrinhoValidator;
+import br.com.camisascriativas.validators.CarrinhoValidator;
 
 @Controller
 @Path("/carrinho")

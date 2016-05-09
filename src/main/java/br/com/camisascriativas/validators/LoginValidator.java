@@ -1,4 +1,4 @@
-package br.com.cc.validators;
+package br.com.camisascriativas.validators;
 
 import javax.inject.Inject;
 
