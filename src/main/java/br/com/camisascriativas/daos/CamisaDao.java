@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import br.com.camisascriativas.models.Camisa;
 
 public class CamisaDao {
+	
 	@Inject private EntityManager manager;
 
 	public List<Camisa> listaTudo() {
@@ -20,9 +21,8 @@ public class CamisaDao {
 	}
 
 	public List<Camisa> buscaCamisasPor(String nome) {
-		return manager
-				.createQuery("from Camisa c where lower(c.nome) like lower(:nome)", Camisa.class)
-				.setParameter("nome", nome)
-				.getResultList();
+		return manager.createQuery
+				("from Camisa c where lower(c.nome) like lower(:nome)",
+				Camisa.class).setParameter("nome", nome).getResultList();
 	}
 }
