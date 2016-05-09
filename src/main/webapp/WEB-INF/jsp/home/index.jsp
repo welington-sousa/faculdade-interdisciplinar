@@ -59,7 +59,7 @@
 				<img class="first-slide" width="284.717" height="213.533" 
 				src="resources/img/knowledge.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
-					<span class="glyphicon glyphicon-book"></span> Literatura
+					<span class="glyphicon glyphicon-book"></span> Computação
 			  </button>
 			</a>
 		</div>

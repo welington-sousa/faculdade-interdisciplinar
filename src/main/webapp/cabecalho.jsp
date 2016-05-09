@@ -27,7 +27,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a href="#" class="navbar-brand">Camisas Criativas</a>
+			      <a href='${linkTo[HomeController].index}' class="navbar-brand">Camisas Criativas</a>
 			    </div>
 			    <div class="navbar-collapse collapse" id="navbar">
 			      <ul class="nav navbar-nav navbar-right">
