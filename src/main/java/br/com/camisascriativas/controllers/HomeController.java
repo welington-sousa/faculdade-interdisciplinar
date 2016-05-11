@@ -8,10 +8,10 @@ import br.com.caelum.vraptor.Result;
 
 @Controller
 public class HomeController {
+	
 	@Inject private Result result;
 
-	@Path("/")
-	public void index() {
+	@Path("/") public void index() {
 		result.include("msg", "Camisas Criativas");
 	}
 }
