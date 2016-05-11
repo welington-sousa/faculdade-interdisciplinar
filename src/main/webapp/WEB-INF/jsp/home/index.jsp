@@ -20,7 +20,7 @@
 			</div>
 			<div class="item active">
 				<a href='${linkTo[CamisasController].femininas}'>
-					<img class="third-slide" src="resources/img/news.png" 
+					<img class="third-slide" src="resources/img/pitadas-pins-útil-percevejos.jpg" 
 					alt="Third slide" width="944.15" height="480">
 				</a>	
 			</div>
@@ -57,7 +57,7 @@
 		<div class="col-sm-6 col-md-4">
 			<a href='${linkTo[CamisasController].criancas}' class="thumbnail"> 
 				<img class="first-slide" width="284.717" height="213.533" 
-				src="resources/img/knowledge.jpg">
+				src="resources/img/pitadas-pins-útil-percevejos.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
 					<span class="glyphicon glyphicon-book"></span> Computação
 			  </button>
