@@ -22,12 +22,14 @@ public class CarrinhoController {
 	@Inject private Result result;
 	@Inject private CarrinhoValidator validator;
 
-	@Get("") public void checkout() {}
+	@Get("") public void checkout() {
+		result.include("msg", "Não há itens no carrinho de compras");
+	}
 
 	@Post("")
 	public void adiciona(Item item) {
 		validator.validate(item);
-		validator.onErrorRedirectTo(this).checkout();
+		validator.onErrorUsePageOf(this).checkout();
 		
 		Camisa produtoCompleto = manager.find(Camisa.class, item.getProduto().getId());
 		item.setProduto(produtoCompleto);

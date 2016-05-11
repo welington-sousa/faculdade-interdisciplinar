@@ -1,13 +1,20 @@
 <div class="container loja">
 	<div class="col-sm-3 col-md-4 sidebar">
-	<c:forEach var="error" items="${errors}">
-	<div class="alert alert-danger alert-dismissable">
-		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-			&times;
-		</button>
-		${errors.from('item.quantidade')}.
-	</div>
-	</c:forEach>
+		<c:forEach var="error" items="${errors}">
+			<div class="alert alert-danger alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+					&times;
+				</button>
+				<a href='${linkTo[CamisasController].camisas}' class="alert-link">
+					${errors.from('item.quantidade')}.
+				</a>
+			</div>
+		</c:forEach>
+		<c:if test="${empty carrinho or carrinho.totalDeItens eq 0 }">
+			<div class="alert alert-info">
+				<a href='${linkTo[CamisasController].camisas}' class="alert-link">Info! ${msg}.</a>
+			</div>
+		</c:if>
 		<div class="panel panel-default">
 			<c:forEach items="${carrinho.itens}" var="item" varStatus="s">
 				<div class="panel-body">

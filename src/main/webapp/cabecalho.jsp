@@ -32,7 +32,7 @@
 			    <div class="navbar-collapse collapse" id="navbar">
 			      <ul class="nav navbar-nav navbar-right">
 			        <li>
-			        	<a title="carrinho de compras" href='<c:url value="/carrinho"/>'>
+			        	<a title="carrinho de compras" href='${linkTo[CarrinhoController].checkout}'>
 							<c:if test="${empty carrinho or carrinho.totalDeItens eq 0 }">
 								<b>0</b>
 								<span class="glyphicon glyphicon-shopping-cart"></span>

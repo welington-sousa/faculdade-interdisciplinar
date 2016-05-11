@@ -22,4 +22,8 @@ public class CarrinhoValidator {
 	public <T> T onErrorRedirectTo(T controller) {
 		return validator.onErrorRedirectTo(controller);
 	}
+	
+	public <T> T onErrorUsePageOf(T controller) {
+		return validator.onErrorUsePageOf(controller);
+	}
 }
