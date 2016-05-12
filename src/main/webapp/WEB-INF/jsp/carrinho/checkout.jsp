@@ -39,9 +39,27 @@
 							</dd>
 							<dd>
 								<form action='<c:url value="/carrinho/${s.index}" />' method="POST">
-									<button class="comprar btn-danger" name="_method" value="DELETE">
+									<button class="comprar btn-danger" data-toggle="modal" data-target="#myModal">
 										<span class="glyphicon glyphicon-trash"></span>
 									</button>
+									
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+										aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title" id="myModalLabel">Remover item</h4>
+												</div>
+												<div class="modal-body">Tem certeza que deseja remover o item do carrinho</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+													<button class="btn btn-primary" name="_method" value="DELETE">Sim</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div>
+									</div><!-- /.modal -->
 								</form>
 							</dd>
 						</dl>
@@ -105,20 +123,20 @@
 			</div>
 
 			<div class="form-group">
-				<input type="month" required="" placeholder="Clique aqui" name="validade-cartao" id="validade-cartao" class="form-control hasDatepicker">
+				<input type="month" required="" placeholder="Clique aqui"
+				name="validade-cartao" id="validade-cartao" class="form-control date">
 			</div>
 
 			<button class="btn btn-primary btn-lg btn-block" type="submit">
-				<span class="glyphicon glyphicon-thumbs-up"></span> Finalizar compra
+				<span class="glyphicon glyphicon-thumbs-up"></span> Efetivar Pedido 
 			</button>
 		</div>
 	</form>
 </div>
 <script type="text/javascript">
-	$("#validade-cartao").datepicker({
-		dateFormat : 'dd/mm/yy',
-		changeMonth : true,
-		changeYear : true,
-		showWeek : true
-	});
+  $(function() {
+    $('#validade-cartao').datetimepicker({
+      pickDate: false
+    });
+  });
 </script>
