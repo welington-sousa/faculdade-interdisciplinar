@@ -1,8 +1,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<title>Camisas Criativas ${camisa.nome}</title>
 		
 		<link href='<c:url value="/resources/css/loja-min.css"/>' rel="stylesheet" />
@@ -27,7 +30,9 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a href='${linkTo[HomeController].index}' class="navbar-brand">Camisas Criativas</a>
+			      <a href='${linkTo[HomeController].index}' class="navbar-brand">
+			      	<span title="camisas criativas" class="glyphicon glyphicon-home"></span>
+			      </a>
 			    </div>
 			    <div class="navbar-collapse collapse" id="navbar">
 			      <ul class="nav navbar-nav navbar-right">
@@ -81,8 +86,7 @@
 					</li>
 			        <li>
 			        	<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-							<a role="button" href='${linkTo[UsuariosController].novo}'> Cadastre-se
-							</a>
+							<a title="cadastre-se" role="button" href='${linkTo[UsuariosController].novo}'> Cadastre-se</a>
 						</c:if>
 			        </li>
 			      </ul>
@@ -96,7 +100,8 @@
     <script>window.jQuery || document.write('<script src="/resources/jquery.min.js"><\/script>')</script>
     <script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
     <script src='<c:url value="/resources/js/holder.min.js"/>'></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src='<c:url value="/resources/js/ie10-viewport-bug-workaround.js"/>'></script>	
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+    <script src='<c:url value="/resources/js/ie10-viewport-bug-workaround.js"/>'></script>
+    <script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>	
 	</body>
 </html>
