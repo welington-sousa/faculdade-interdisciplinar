@@ -39,11 +39,6 @@
 				</label>
 			</span>	
 
-			<fieldset>
-				<input type="hidden" name="item.produto.id" value="${camisa.id}" />
-				<input type="number" class="form-control" name="item.quantidade" value="1" required />
-			</fieldset>
-
 			<button class="comprar btn-default btn-block" type="submit">
 				<span class="glyphicon glyphicon-ok"></span> 
 				Carrinho de Compras
