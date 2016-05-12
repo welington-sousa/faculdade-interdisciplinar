@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import br.com.caelum.vraptor.validator.I18nMessage;
 import br.com.caelum.vraptor.validator.Validator;
+import br.com.camisascriativas.daos.UsuarioDao;
 import br.com.camisascriativas.models.Usuario;
 
 public class LoginValidator {
@@ -16,6 +17,10 @@ public class LoginValidator {
 				new I18nMessage("usuario.login", "usuario.login.vazio"));
 		validator.addIf(usuario.getSenha() == null, 
 				new I18nMessage("usuario.senha", "usuario.senha.vazia"));
+		
+//		validator.addIf(usuario.getSenha() != null && new UsuarioDao().existeUsuarioComSenha(usuario), 
+//				new I18nMessage("usuario.senha",
+//						"usuario.senha.invalida"));
 	}
 	
 	public <T> T onErrorRedirectTo(T controller) {

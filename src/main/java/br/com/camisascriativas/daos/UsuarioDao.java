@@ -26,4 +26,12 @@ public class UsuarioDao {
 				.getSingleResult();
 				return encontrado != null;
 	}
+	
+	public boolean existeUsuarioComSenha(Usuario usuario) {
+		Usuario encontrado = manager
+				.createQuery("from Usuario u where u.senha=:senha", Usuario.class)
+				.setParameter("senha", usuario.getSenha())
+				.getSingleResult();
+				return encontrado != null;
+	}
 }

@@ -7,7 +7,7 @@
 		placeholder="Nome de usuário" autofocus>
 		<span class="alert text-danger">${errors.from('usuario.login')}</span>
 			
-		<input type="password" name="usuario.senha" id="senha" class="form-control"
+		<input type="password" name="usuario.senha" id="senha" class="form-control required"
 		placeholder="Senha">
 		<span class="alert text-danger">${errors.from('usuario.senha')}</span>
 
