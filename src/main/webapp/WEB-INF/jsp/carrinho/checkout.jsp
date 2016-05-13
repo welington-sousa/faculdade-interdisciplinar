@@ -32,18 +32,18 @@
 				<tr>
 					<td>
 						<a href="/produtos/{produto.id}">
-							<img width="100" height="100" class="img-thumbnail img-resposive" 
+							<img width="70" height="85" class="img-thumbnail img-resposive" 
 							src="resources/img/produtos/foto${item.produto.id}-azul.png" alt="${item.produto.nome}">
 						</a>
 					</td>
-					<td><h2 class="formularioDoCarrinho-item-titulo">${item.produto.nome}</h2></td>
-					<td><fmt:formatNumber type="currency" value="${item.produto.preco}" /></td>
-					<td>
+					<td class="table-carrinho-item">${item.produto.nome}</td>
+					<td class="table-carrinho-item"><fmt:formatNumber type="currency" value="${item.produto.preco}" /></td>
+					<td class="table-carrinho-item">
 						<input type="hidden" name="item.produto.id" value="${camisa.id}" />
-						<input type="number" class="form-control" name="item.quantidade" value="1" required />
+						<input style="width: 18%; display: inherit;" class="form-control" name="item.quantidade" value="1" required type="number">
 					</td>
-					<td><fmt:formatNumber type="currency" value="${item.quantidade * item.valor}" /></td>
-					<td>
+					<td class="table-carrinho-item"><fmt:formatNumber type="currency" value="${item.quantidade * item.valor}" /></td>
+					<td class="table-carrinho-item">
 						<form action='<c:url value="/carrinho/${s.index}" />' method="POST">
 							<button class="comprar btn-danger" data-toggle="modal" data-target="#myModal">
 								<span class="glyphicon glyphicon-trash"></span>
@@ -70,6 +70,23 @@
 					</td>	
 				</tr>
 			</tbody>
+			
+			<tfoot>
+				<tr class="table-carrinho-item">
+					<td colspan="3">
+						<a title="efetivar" href='${linkTo[ComprasController].efetivar}'>
+							<button type="submit" class="btn btn-primary">
+						  		<span class="glyphicon glyphicon-finish"></span> Finalizar compra
+							</button>
+						</a>	
+					</td>
+					<td>
+						<button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-refresh"></span></button>
+					</td>
+					<td><fmt:formatNumber type="currency" value="${item.produto.preco}" /></td>
+					<td></td> 
+				</tr>
+			</tfoot>
 		</table>
 	</c:forEach>
 </div>
