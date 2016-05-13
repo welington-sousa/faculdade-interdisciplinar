@@ -102,6 +102,7 @@
     <script src='<c:url value="/resources/js/holder.min.js"/>'></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
     <script src='<c:url value="/resources/js/ie10-viewport-bug-workaround.js"/>'></script>
-    <script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>	
+    <script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>
+    <script src='<c:url value="/resources/js/busca-endereco.js"/>'></script>	
 	</body>
 </html>
