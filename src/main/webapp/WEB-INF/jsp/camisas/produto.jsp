@@ -18,26 +18,31 @@
 			<p>	apenas <fmt:formatNumber type="currency" value="${camisa.preco}" /></p>
 
 			<span>
-				<input type="radio" checked="" required="" id="radio_18088548551" value="18088548551" name="id" itemprop="offer" class="adicionarCamisetaAoCarrinho-tamanho-radio">
+				<input type="radio" checked required id="radio_18088548551" value="18088548551" name="id" class="adicionarCamisetaAoCarrinho-tamanho-radio">
 				<label for="radio_18088548551" class="adicionarCamisetaAoCarrinho-tamanho ">
 					P
 				</label>
 					
-				<input type="radio" checked="" required="" id="radio_18088548615" value="18088548615" name="id" itemprop="offer" class="adicionarCamisetaAoCarrinho-tamanho-radio">
+				<input type="radio" checked required id="radio_18088548615" value="18088548615" name="id" class="adicionarCamisetaAoCarrinho-tamanho-radio">
 				<label for="radio_18088548615" class="adicionarCamisetaAoCarrinho-tamanho ">
 					M
 				</label>
 					
-				<input type="radio" checked="" required="" id="radio_18088548743" value="18088548743" name="id" itemprop="offer" class="adicionarCamisetaAoCarrinho-tamanho-radio">
+				<input type="radio" checked required id="radio_18088548743" value="18088548743" name="id" class="adicionarCamisetaAoCarrinho-tamanho-radio">
 				<label for="radio_18088548743" class="adicionarCamisetaAoCarrinho-tamanho ">
 					G
 				</label>
 					
-				<input type="radio" checked="" required="" id="radio_18088672199" value="18088672199" name="id" itemprop="offer" class="adicionarCamisetaAoCarrinho-tamanho-radio">
+				<input type="radio" checked required id="radio_18088672199" value="18088672199" name="id" class="adicionarCamisetaAoCarrinho-tamanho-radio">
 				<label for="radio_18088672199" class="adicionarCamisetaAoCarrinho-tamanho ">
 					GG
 				</label>
 			</span>	
+
+			<fieldset>
+				<input type="hidden" name="item.produto.id" value="${camisa.id}" />
+				<input type="number" class="form-control" name="item.quantidade" value="1" required />
+			</fieldset>
 
 			<button class="comprar btn-default btn-block" type="submit">
 				<span class="glyphicon glyphicon-ok"></span> 
