@@ -15,4 +15,8 @@ public class CategoriaDao {
 		return manager.createQuery("from Categoria c", Categoria.class)
 				.getResultList();
 	}
+	
+	public Categoria buscarPorId(Integer id) {
+		return manager.find(Categoria.class, id);
+	}
 }
