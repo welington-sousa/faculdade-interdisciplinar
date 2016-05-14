@@ -6,6 +6,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
 import br.com.camisascriativas.models.Categoria;
+import br.com.camisascriativas.models.PaginatedList;
 
 public class CategoriaDao {
 
@@ -18,5 +19,9 @@ public class CategoriaDao {
 	
 	public Categoria buscarPorId(Integer id) {
 		return manager.find(Categoria.class, id);
+	}
+	
+	public PaginatedList paginated(int page, int max) {
+		return new PaginatorQueryHelper().list(manager, Categoria.class, page, max);
 	}
 }
