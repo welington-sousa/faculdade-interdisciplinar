@@ -8,17 +8,16 @@ import javax.persistence.EntityManager;
 import br.com.camisascriativas.models.Camisa;
 
 public class CamisaDao {
-	
-	@Inject private EntityManager manager;
+
+	@Inject
+	private EntityManager manager;
 
 	public List<Camisa> listaTudo() {
-		return manager.createQuery("from Camisa c order by id desc", 
-				Camisa.class).setMaxResults(9).getResultList();
+		return manager.createQuery("from Camisa c order by id asc", Camisa.class).setMaxResults(9).getResultList();
 	}
-	
+
 	public List<Camisa> listaTudoMusica() {
-		return manager.createQuery("from Camisa c order by id desc", 
-				Camisa.class).setMaxResults(1).getResultList();
+		return manager.createQuery("from Camisa c order by id desc", Camisa.class).setMaxResults(1).getResultList();
 	}
 
 	public Camisa buscaPorId(Long id) {
@@ -26,8 +25,7 @@ public class CamisaDao {
 	}
 
 	public List<Camisa> buscaCamisasPor(String nome) {
-		return manager.createQuery
-				("from Camisa c where lower(c.nome) like lower(:nome)",
-				Camisa.class).setParameter("nome", nome).getResultList();
+		return manager.createQuery("from Camisa c where lower(c.nome) like lower(:nome)", Camisa.class)
+				.setParameter("nome", nome).getResultList();
 	}
 }
