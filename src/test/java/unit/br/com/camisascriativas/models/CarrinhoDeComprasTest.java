@@ -14,20 +14,20 @@ import br.com.camisascriativas.models.ItemCompra;
 public class CarrinhoDeComprasTest {
 
 	private CarrinhoDeCompras carrinho;
-	private Camisa mulher;
-	private Camisa homem;
+	private Camisa computacao;
+	private Camisa musica;
 
 	@Before
 	public void inicializa() {
 		this.carrinho = new CarrinhoDeCompras();
-		this.mulher = new CriadorDeCamisa()
-				.criaCamisaCom("Camiseta Flor de Lotus", "100% algodão; lavagem a mão", new BigDecimal(70.00))
+		this.computacao = new CriadorDeCamisa()
+				.criaCamisaCom("Camiseta Flor de Lotus", "100% algodão; lavagem a mão", BigDecimal.valueOf(70.00))
 				.constroi();
-		this.homem = new CriadorDeCamisa()
-				.criaCamisaCom("Camiseta Os Muntantes", "100% algodão; lavagem a mão", new BigDecimal(70.00))
+		this.musica = new CriadorDeCamisa()
+				.criaCamisaCom("Camiseta Os Muntantes", "100% algodão; lavagem a mão", BigDecimal.valueOf(70.00))
 				.constroi();
-		this.homem = new CriadorDeCamisa()
-				.criaCamisaCom("Camiseta Os Muntantes", "100% algodão; lavagem a mão", new BigDecimal(80.90))
+		this.musica = new CriadorDeCamisa()
+				.criaCamisaCom("Camiseta Os Muntantes", "100% algodão; lavagem a mão", BigDecimal.valueOf(80.90))
 				.constroi();
 	}
 
@@ -38,7 +38,7 @@ public class CarrinhoDeComprasTest {
 
 	@Test
 	public void deveRetornarValorDoItemSeCarrinhoTiverApenasUmElemento() {
-		carrinho.adiciona(new ItemCompra(mulher, 2));
+		carrinho.adiciona(new ItemCompra(computacao, 2));
 
 		assertEquals("quantidade de itens", 1, carrinho.getTotalDeItens());
 		assertEquals("valor total", 140, carrinho.getTotal().doubleValue(), 0.0001);
@@ -46,8 +46,8 @@ public class CarrinhoDeComprasTest {
 
 	@Test
 	public void deveRetornarMaiorValorSeCarrinhoContemMuitosElementos() {
-		carrinho.adiciona(new ItemCompra(homem, 2));
-		carrinho.adiciona(new ItemCompra(homem, 1));
+		carrinho.adiciona(new ItemCompra(musica, 2));
+		carrinho.adiciona(new ItemCompra(musica, 1));
 
 		assertEquals(2, carrinho.getTotalDeItens());
 		assertEquals("maior valor", 80.90, encontraNo(carrinho), 0.0001);
@@ -59,7 +59,7 @@ public class CarrinhoDeComprasTest {
 		// garante que o carrinho está vazio
 		assertEquals(0, carrinho.getItens().size());
 
-		ItemCompra item = new ItemCompra(mulher, 2);
+		ItemCompra item = new ItemCompra(computacao, 2);
 		carrinho.adiciona(item);
 
 		assertEquals(1, carrinho.getItens().size());
