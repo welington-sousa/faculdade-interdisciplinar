@@ -4,13 +4,13 @@ import javax.inject.Inject;
 
 import br.com.caelum.vraptor.validator.I18nMessage;
 import br.com.caelum.vraptor.validator.Validator;
-import br.com.camisascriativas.models.Item;
+import br.com.camisascriativas.models.ItemCompra;
 
 public class CarrinhoValidator {
 
 	@Inject private Validator validator;
 
-	public void validate(Item item) {
+	public void validate(ItemCompra item) {
 		validator.validate(item);
 
 		if (item.getQuantidade() <= 0) {

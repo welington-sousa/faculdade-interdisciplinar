@@ -10,33 +10,37 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
 @SessionScoped
-@Named
-public class Carrinho implements Serializable {
-	
+@Named("carrinho")
+public class CarrinhoDeCompras implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 
-	private List<Item> itens = new ArrayList<Item>();
+	private List<ItemCompra> itens;
 	private BigDecimal total = BigDecimal.ZERO;
 
-	public void adiciona(Item item) {
+	public CarrinhoDeCompras() {
+		this.itens = new ArrayList<ItemCompra>();
+	}
+
+	public void adiciona(ItemCompra item) {
 		itens.add(item);
 		total = total.add(item.getValor());
 	}
 
-	public Integer getTotalDeItens() {
-		return itens.size();
+	public int getTotalDeItens() {
+		return getItens().size();
 	}
 
 	public BigDecimal getTotal() {
 		return total;
 	}
 
-	public List<Item> getItens() {
+	public List<ItemCompra> getItens() {
 		return Collections.unmodifiableList(itens);
 	}
 
 	public void remove(int indiceItem) {
-		Item removido = itens.remove(indiceItem);
+		ItemCompra removido = itens.remove(indiceItem);
 		total = total.subtract(removido.getValor());
 	}
 }

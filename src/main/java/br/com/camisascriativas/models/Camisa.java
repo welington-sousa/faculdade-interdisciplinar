@@ -10,12 +10,14 @@ import javax.persistence.Id;
 
 @Entity
 public class Camisa {
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
 	@Column(length = 1000)
 	private String descricao;
-	private BigDecimal preco;
+	private BigDecimal valorUnitario;
 
 	public Long getId() {
 		return id;
@@ -41,12 +43,11 @@ public class Camisa {
 		this.descricao = descricao;
 	}
 
-	public BigDecimal getPreco() {
-		return preco;
+	public BigDecimal getValorUnitario() {
+		return valorUnitario;
 	}
 
-	public void setPreco(BigDecimal preco) {
-		this.preco = preco;
+	public void setValorUnitario(BigDecimal valorUnitario) {
+		this.valorUnitario = valorUnitario;
 	}
-
 }

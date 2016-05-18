@@ -19,7 +19,7 @@
 								<figure>
 									<a href='<c:url value="/camisas/${camisa.id}"/>'> 
 										<img title="${camisa.nome}" alt="${camisa.nome}" 
-											 src="resources/img/produtos/miniatura${camisa.id}.png">
+											 src="../resources/img/camisas/modelo${camisa.id}.png">
 											 
 										<figcaption>
 											${camisa.nome} por <fmt:formatNumber type="currency" 
@@ -43,7 +43,7 @@
 								<figure>
 									<a href='<c:url value="/camisas/${camisa.id}"/>'> 
 										<img title="${camisa.nome}" alt="${camisa.nome}" 
-											 src="resources/img/produtos/miniatura${camisa.id}.png">
+											 src="../resources/img/camisas/modelo${camisa.id}.png">
 											 
 										<figcaption>
 											${camisa.nome} por <fmt:formatNumber type="currency" 

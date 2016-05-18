@@ -15,6 +15,11 @@ public class CamisaDao {
 		return manager.createQuery("from Camisa c order by id desc", 
 				Camisa.class).setMaxResults(9).getResultList();
 	}
+	
+	public List<Camisa> listaTudoMusica() {
+		return manager.createQuery("from Camisa c order by id desc", 
+				Camisa.class).setMaxResults(1).getResultList();
+	}
 
 	public Camisa buscaPorId(Long id) {
 		return manager.find(Camisa.class, id);

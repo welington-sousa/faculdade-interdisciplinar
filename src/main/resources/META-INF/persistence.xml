@@ -3,7 +3,6 @@
   <persistence-unit name="default">
     <class>br.com.camisascriativas.models.Camisa</class>
     <class>br.com.camisascriativas.models.Usuario</class>
-    <class>br.com.camisascriativas.models.Categoria</class>
     <properties>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.password" value="!QA@WS1qa2ws2016"/>

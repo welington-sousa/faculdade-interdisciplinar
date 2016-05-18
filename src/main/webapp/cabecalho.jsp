@@ -8,7 +8,7 @@
 		
 		<title>Camisas Criativas ${camisa.nome}</title>
 		
-		<link href='<c:url value="/resources/css/loja-min.css"/>' rel="stylesheet" />
+		<link href='<c:url value="/resources/css/loja.min.css"/>' rel="stylesheet" />
 		<link href='<c:url value="/resources/css/bootstrap.min.css"/>' rel="stylesheet" />
 		
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

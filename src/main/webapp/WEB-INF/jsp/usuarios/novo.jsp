@@ -1,4 +1,4 @@
-<link href='<c:url value="/resources/css/login-min.css"/>' rel="stylesheet" />
+<link href='<c:url value="/resources/css/login.min.css"/>' rel="stylesheet" />
 <div class="container loja">
 	<c:forEach var="error" items="${errors}">
 	<div class="alert alert-danger alert-dismissable">

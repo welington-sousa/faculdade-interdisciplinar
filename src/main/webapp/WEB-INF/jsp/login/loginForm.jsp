@@ -1,4 +1,4 @@
-<link href='<c:url value="/resources/css/login-min.css"/>' rel="stylesheet" />
+<link href='<c:url value="/resources/css/login.min.css"/>' rel="stylesheet" />
 <div class="container loja">
 	<form action='${linkTo[LoginController].autentica}' class="form-signin" method="post">
 		<h2 class="form-signin-heading">Efetuar login</h2>
