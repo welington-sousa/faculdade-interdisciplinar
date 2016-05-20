@@ -12,15 +12,15 @@ public class CamisaDao {
 	@Inject
 	private EntityManager manager;
 
-	public List<Camisa> listaTudo() {
+	public List<Camisa> listaTudoComputacao() {
 		return manager.createQuery("from Camisa c order by id asc", Camisa.class).setMaxResults(9).getResultList();
 	}
 
 	public List<Camisa> listaTudoMusica() {
-		return manager.createQuery("from Camisa c order by id desc", Camisa.class).setMaxResults(1).getResultList();
+		return manager.createQuery("from Camisa c order by id desc", Camisa.class).setMaxResults(9).getResultList();
 	}
 
-	public Camisa buscaPorId(Long id) {
+	public Camisa buscaPorId(Integer id) {
 		return manager.find(Camisa.class, id);
 	}
 

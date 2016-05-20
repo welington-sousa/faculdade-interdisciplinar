@@ -18,49 +18,20 @@
 		<div class="panel panel-default">
 			<c:forEach items="${carrinho.itens}" var="item" varStatus="s">
 				<div class="panel-body">
-					<img class="img-thumbnail img-resposive"
-						src="resources/img/produtos/foto${item.produto.id}-azul.png"
-						alt="${item.produto.nome}">
+					<img class="img-thumbnail img-resposive" src="resources/img/camisas/estampa${item.camisa.id}-azul.png" alt="${item.camisa.nome}">
 
 					<table class="table">
 						<dl>
-							<hr class="featurette-divider"/>
 							<dd>
 								<b>SubTotal </b> 
 								<i class="text-info">
-								<fmt:formatNumber type="currency" value="${item.produto.preco}" /></i>
+								<fmt:formatNumber type="currency" value="${item.camisa.valorUnitario}" /></i>
 							</dd>
-							<hr class="featurette-divider"/>
 							<dd>
 								<b>Total </b>
 								<i class="text-info">
 								<fmt:formatNumber	type="currency" value="${item.quantidade 
-								* item.produto.preco}" /></i>
-							</dd>
-							<dd>
-								<form action='<c:url value="/carrinho/${s.index}" />' method="POST">
-									<button class="comprar btn-danger" data-toggle="modal" data-target="#myModal">
-										<span class="glyphicon glyphicon-trash"></span>
-									</button>
-									
-									<!-- Modal -->
-									<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-										aria-labelledby="myModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h4 class="modal-title" id="myModalLabel">Remover item</h4>
-												</div>
-												<div class="modal-body">Tem certeza que deseja remover o item do carrinho</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-													<button class="btn btn-primary" name="_method" value="DELETE">Sim</button>
-												</div>
-											</div><!-- /.modal-content -->
-										</div>
-									</div><!-- /.modal -->
-								</form>
+								* item.camisa.valorUnitario}" /></i>
 							</dd>
 						</dl>
 					</table>
@@ -74,20 +45,20 @@
 			<h4>Suas informações</h4>
 			
 			<div class="form-group">
-				<input type="text" class="form-control" id="email" placeholder="E-mail" autofocus="" >
+				<input type="text" class="form-control" id="email" placeholder="E-mail" autofocus>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
-						<input type="text" required="" id="nome" class="form-control"
+						<input type="text" required id="nome" class="form-control"
 						placeholder="Nome">
 					</div>
 				</div>
 
 				<div class="col-md-6">
 					<div class="form-group">
-						<input type="text" required="" id="sobrenome" class="form-control"
+						<input type="text" required id="sobrenome" class="form-control"
 						placeholder="Sobrenome" >
 					</div>
 				</div>
@@ -126,7 +97,7 @@
   
 	  			<div class="col-md-2">
 					<div class="form-group">
-						<input type="text" required="" id="uf" class="form-control" placeholder="Uf">
+						<input type="text" required id="uf" class="form-control" placeholder="Uf">
 					</div>
 				</div>
 			</div>	
@@ -139,7 +110,7 @@
 			</div>
 
 			<div class="form-group">
-				   <select required="" class="form-control" id="bandeira-cartao" name="bandeira-cartao">
+				   <select required class="form-control" id="bandeira-cartao" name="bandeira-cartao">
 					<option value="master">MasterCard</option>
 					<option value="visa">VISA</option>
 					<option value="amex">American Express</option>
@@ -147,7 +118,7 @@
 			</div>
 
 			<div class="form-group">
-				<input type="month" required="" placeholder="Clique aqui"
+				<input type="month" required placeholder="Clique aqui"
 				name="validade-cartao" id="validade-cartao" class="form-control date">
 			</div>
 

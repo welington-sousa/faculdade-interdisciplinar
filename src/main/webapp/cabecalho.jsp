@@ -8,10 +8,10 @@
 		
 		<title>Camisas Criativas ${camisa.nome}</title>
 		
-		<link href='<c:url value="/resources/css/loja.min.css"/>' rel="stylesheet" />
+		<link href='<c:url value="/resources/css/loja.css"/>' rel="stylesheet" />
 		<link href='<c:url value="/resources/css/bootstrap.min.css"/>' rel="stylesheet" />
 		
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
 		<link href='<c:url value="/resources/css/ie10-viewport-bug-workaround.css"/>' rel="stylesheet" />
 		
 		<!-- icone do topo -->
@@ -24,75 +24,47 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  	<div class="container-fluid">
 			    <div class="navbar-header">
-			      <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a href='${linkTo[HomeController].index}' class="navbar-brand">
-			      	<span title="camisas criativas" class="glyphicon glyphicon-home"></span>
-			      </a>
+					<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href='${linkTo[HomeController].index}' class="navbar-brand">
+						<span title="camisas criativas" class="glyphicon glyphicon-home"></span>
+					</a>
+					<a href='${linkTo[CamisasController].musicas}' class="navbar-brand">
+						<span class="glyphicon glyphicon-music"> Música</span>
+					</a>
+					<a href='${linkTo[CamisasController].computacao}' class="navbar-brand">
+						<span class="glyphicon glyphicon-qrcode"> Computação</span>
+					</a>
 			    </div>
 			    <div class="navbar-collapse collapse" id="navbar">
-			      <ul class="nav navbar-nav navbar-right">
-			        <li>
-			        	<a title="carrinho de compras" href='${linkTo[CarrinhoController].checkout}'>
-							<c:if test="${empty carrinho or carrinho.totalDeItens eq 0 }">
-								<b>0</b>
-								<span class="glyphicon glyphicon-shopping-cart"></span>
-							</c:if>
-							<c:if test="${carrinho.totalDeItens > 0}"> 
-								<b>${carrinho.totalDeItens}</b>
-								<span class="glyphicon glyphicon-shopping-cart"></span>
-							</c:if>
-						</a>
-			        </li>
-			        <li class="active">
-						<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-							<li class="active">
-									
-								<a href='#' title="logar no sistema" class="dropdown-toggle" data-toggle="dropdown"> 
-									<i class="glyphicon glyphicon-user"></i> Você não está logado
-									<span class="caret"></span>
-								</a>
-								
-								<ul class="dropdown-menu">
-									<li>
-										<a title="entrar" href='${linkTo[LoginController].loginForm}'>
-											<span class="glyphicon glyphicon-log-in"></span>
-										</a>
-									</li>
-								</ul>
-							</li>		
-						</c:if>	
-	
-						<c:if test="${usuarioLogado.logado}">
-							<li class="active">
-									
-								<a href='#' title="logar no sistema" class="dropdown-toggle" data-toggle="dropdown"> 
-									<i class="glyphicon glyphicon-user"></i> Olá, ${usuarioLogado.nome}
-									<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a title="sair" href='${linkTo[LoginController].sair}'>
-											<span class="glyphicon glyphicon-log-out"></span>
-										</a>
-									</li>
-								</ul>	
-							</li>
-						</c:if>
-					</li>
-			        <li>
-			        	<c:if test="${empty usuarioLogado or not usuarioLogado.logado}">
-							<a title="cadastre-se" role="button" href='${linkTo[UsuariosController].novo}'> Cadastre-se</a>
-						</c:if>
-			        </li>
-			      </ul>
-			      <form class="navbar-form navbar-right">
-			        <input type="text" placeholder="Search..." class="form-control">
-			      </form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+					  		<a class="navbar-brand" title="carrinho de compras" href='${linkTo[CarrinhoController].checkout}'>
+								<c:if test="${empty carrinho or carrinho.totalDeItens eq 0 }">
+									<b>0</b>
+									<span class="glyphicon glyphicon-shopping-cart"></span>
+								</c:if>
+								<c:if test="${carrinho.totalDeItens > 0}"> 
+									<b>${carrinho.totalDeItens}</b>
+									<span class="glyphicon glyphicon-shopping-cart"></span>
+								</c:if>
+							</a>
+					     </li>
+					     <li class="active">
+					     	<a class="navbar-brand" href="#">
+							 	<span>
+									<span class="glyphicon glyphicon-road"></span> <small>Frete grátis para todo o Brasil</small>
+								</span>
+							</a>
+						 </li>
+					 </ul>
+					<form class="navbar-form navbar-right" action='<c:url value="/camisas/busca" />'>
+						<input type="search" class="form-control" name="nome" id="busca" placeholder="Buscar Produtos" required>
+					</form>
 			    </div>
 		  	</div>
 		</nav>

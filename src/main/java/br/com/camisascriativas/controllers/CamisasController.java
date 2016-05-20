@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
-import br.com.camisascriativas.annotation.RestrictMethod;
+import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.daos.CamisaDao;
 import br.com.camisascriativas.models.Camisa;
 
@@ -17,10 +17,12 @@ public class CamisasController {
 
 	@Inject
 	private CamisaDao camisaDao;
+	@Inject
+	private Result result;
 
-	@Get("")
-	public List<Camisa> camisas() {
-		return this.camisaDao.listaTudo();
+	@Get("/computacao")
+	public List<Camisa> computacao() {
+		return this.camisaDao.listaTudoComputacao();
 	}
 
 	@Get("/musicas")
@@ -28,13 +30,14 @@ public class CamisasController {
 		return this.camisaDao.listaTudoMusica();
 	}
 
-	@RestrictMethod
 	@Get("/{id}")
-	public Camisa produto(Long id) {
+	public Camisa produto(Integer id) {
 		return this.camisaDao.buscaPorId(id);
 	}
 
+	@Get("/busca")
 	public List<Camisa> busca(String nome) {
+		result.include("nome", nome);
 		return camisaDao.buscaCamisasPor(nome);
 	}
 }

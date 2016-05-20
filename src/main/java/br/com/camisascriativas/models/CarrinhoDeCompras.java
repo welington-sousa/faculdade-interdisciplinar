@@ -13,7 +13,10 @@ import javax.inject.Named;
 @Named("carrinho")
 public class CarrinhoDeCompras implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6616983944877189238L;
 
 	private List<ItemCompra> itens;
 	private BigDecimal total = BigDecimal.ZERO;

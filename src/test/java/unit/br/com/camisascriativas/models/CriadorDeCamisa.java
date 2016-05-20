@@ -9,10 +9,8 @@ public class CriadorDeCamisa {
 	private Camisa camisa;
 
 	public CriadorDeCamisa criaCamisaCom(String nome, String descricao, BigDecimal valorUnitario) {
-		camisa = new Camisa();
+		camisa = new Camisa(descricao, valorUnitario);
 		camisa.setNome(nome);
-		camisa.setDescricao(descricao);
-		camisa.setValorUnitario(valorUnitario);
 		return this;
 	}
 

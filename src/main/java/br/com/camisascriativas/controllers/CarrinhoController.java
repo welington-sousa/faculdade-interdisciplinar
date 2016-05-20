@@ -11,6 +11,7 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
 import br.com.camisascriativas.models.Camisa;
 import br.com.camisascriativas.models.CarrinhoDeCompras;
+import br.com.camisascriativas.models.Cor;
 import br.com.camisascriativas.models.ItemCompra;
 import br.com.camisascriativas.validators.CarrinhoValidator;
 
@@ -39,6 +40,8 @@ public class CarrinhoController {
 
 		Camisa camisa = manager.find(Camisa.class, item.getCamisa().getId());
 		item.setCamisa(camisa);
+		Cor cor = new Cor();
+		item.setCor(cor);
 		carrinho.adiciona(item);
 		result.redirectTo(this).checkout();
 	}

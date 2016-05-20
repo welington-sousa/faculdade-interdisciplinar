@@ -1,0 +1,44 @@
+body{background-color:#fff;}.container{width:72%}.loja{margin-top:80px}.loja .novidades{float:left;border-radius:2px}.loja .promocoes{float:right;border-radius:2px}.secao{margin:1.0309% 0;padding:1.0309%;width:100%;}.secao h2{color:#f5f5f5;font-size:1.5em;font-weight:bold;text-transform:uppercase;margin-bottom:2.1551%}. h2:before{content:'\2766';padding-right:1.1%;opacity:.4}.secao li{display:inline-block;vertical-align:top;width:31.7%;margin:.4311%;padding-bottom:2.1551%}.secao li:hover{background-color:rgba(255,255,255,0.8);box-shadow:1px 1px 3px rgba(30,30,30,0.5);-webkit-transform:scale(1.2) rotate(-5deg);transform:scale(1.2) rotate(-5deg);-webkit-transition:.7s ease-in;transition:.7s ease-in}.secao li:nth-child(2n):hover{-webkit-transform:scale(1.2) rotate(5deg);transform:scale(1.2) rotate(5deg);-webkit-transition:.7s ease-in;transition:.7s ease-in}.secao figcaption{background-color:#f5f5f5;height:60px}.secao figure img{width:100%}.secao a{color:#333;font-size:1em;text-align:center;text-decoration:none !important}.produto{color:#333333;line-height:1.3;margin-top:2em;position:relative;padding-left:48%;font-size:1.2em}.produto h1{font-size:1.8em;font-weight:bold}.produto p{font-size:1.2em;font-style:italic;margin-bottom:1em}.produto legend{display:block;font:bold .9em/2.5 arial;text-transform:uppercase;color:#333333}fieldset{display:table-column;display:inline-block;vertical-align:top !important;margin:1em 0 !important;min-width:200px;width:45%}.cores{position:static;padding:0}.cores input:checked+label:after{border:6px solid rgba(0,0,0,0.3)}.cores input[type=radio]{display:none}.cores input:not(:checked)+label img{display:none}label [for=verde]:after{left:0}label [for=vermelha]:after{left:60px}label [for=azul]:after{left:120px}.cores label[for=verde]:hover:after{border:6px solid #83dd89}.cores label[for=vermelha]:hover:after{border:6px solid #752626}.cores label[for=azul]:hover:after{border:6px solid #888dd5}.cores label:after{margin-right:10px;border:6px solid rgba(0,0,0,0.1);content:'';display:block;border-radius:30%;width:50px;height:50px;position:static;float:left;top:30px;-moz-box-sizing:border-box;box-sizing:border-box;transition:1s}.cores label img{max-width:35px;min-height:100%;max-width:100%;display:block;position:absolute;top:0;left:0}.tamanhos input{float:right;width:77%;padding:15px 5px 0}.tamanhos output{display:inline-block;height:44px;width:44px;line-height:40px;text-align:center;border:3px solid #e5e5e5;border-radius:6px;color:#333333}.detalhes{padding:2em 0 0;color:#333333}.detalhes h2{font-size:1.5em;line-height:2}.detalhes p{margin:1em 0;font-size:1em;line-height:1.5;max-width:44%;text-align:justify}.detalhes table{width:44%}table{border-spacing:.2em;border-collapse:separate;border:2px dashed #ccc}thead{background:#ecf0f1;color:#95a5a6}thead th{font-weight:bold;padding:.3em 1em;text-align:center}tr:nth-child(2n){background:#ecf0f1;color:#95a5a6}td{padding:.3em;text-align:center}td:first-child{font-style:italic}.comprar{background:#f5f5f5;border:0;color:#333;font-size:small;text-transform:uppercase;box-shadow:0 1px 3px #777;padding:1.5em 1em;margin:1em 0;display:block}.panel-body{background:#fbfbfb}.carousel{margin-bottom: 30px;}.carousel{margin-bottom: 30px;}.adicionarCamisetaAoCarrinho-tamanho {
+    border: 3px solid #eee;
+    border-radius: 3px;
+    text-align: center;
+    color: #6c6a69;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "open-sans",sans-serif;
+    font-weight: 600;
+    margin: 0.8em 0.2em 0.5em;
+    padding: 0.5em 0.2em;
+    text-transform: uppercase;
+    width: 2.5em;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho.disabled::after {
+    border-top: 2px solid rgba(200, 120, 120, 0.75);
+    content: "";
+    display: block;
+    left: -2px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-39deg);
+    width: 110%;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho * {
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.adicionarCamisetaAoCarrinho-tamanho-radio {
+    height: 0;
+    left: -9999px;
+    position: absolute;
+}
+.adicionarCamisetaAoCarrinho-tamanho-radio:checked + .adicionarCamisetaAoCarrinho-tamanho {
+    background-color: #dddd7c;
+    color: #fff;
+}
+
+.table-carrinho-item {
+	vertical-align: middle !important;
+}
