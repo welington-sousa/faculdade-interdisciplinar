@@ -37,7 +37,7 @@
 
 	<div class="row">
 		<div class="col-md-6">
-			<a href='${linkTo[CamisasController].computacao}' class="thumbnail"> 
+			<a href='${linkTo[CamisasController].musicas}' class="thumbnail"> 
 				<img class="first-slide" width="284.717" height="213.533"
 				src="resources/img/musician.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
@@ -46,7 +46,7 @@
 			</a>
 		</div>
 		<div class="col-md-6">
-			<a href="#" class="thumbnail"> 
+			<a href='${linkTo[CamisasController].computacao}' class="thumbnail"> 
 				<img class="first-slide" width="284.717" height="213.533" 
 				src="resources/img/pitadas-pins-útil-percevejos.jpg">
 				<button type="submit" class="comprar btn-danger btn-block">
