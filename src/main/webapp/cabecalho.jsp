@@ -8,8 +8,9 @@
 		
 		<title>Camisas Criativas ${camisa.nome}</title>
 		
-		<link href='<c:url value="/resources/css/loja.css"/>' rel="stylesheet" />
+		<link href='<c:url value="/resources/css/loja.css"/>' rel="stylesheet" /> 
 		<link href='<c:url value="/resources/css/bootstrap.min.css"/>' rel="stylesheet" />
+		<link href='<c:url value="/resources/css/jquery-ui.css"/>' rel="stylesheet" />
 		
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
 		<link href='<c:url value="/resources/css/ie10-viewport-bug-workaround.css"/>' rel="stylesheet" />
@@ -18,6 +19,11 @@
 		<link href='<c:url value="/resources/img/logo.png"/>' rel="shortcut icon" sizes="144x144" />
 		
 		<script src='<c:url value="/resources/js/ie-emulation-modes-warning.js"/>'></script>
+		
+		<script src='<c:url value="/resources/js/jquery.min.js"/>'></script>
+		<script src='<c:url value="/resources/js/jquery-ui.js"/>'></script>
+		<script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
+		<script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>
 	</head>
 	
 	<body>
@@ -68,13 +74,10 @@
 			    </div>
 		  	</div>
 		</nav>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
-    <script>window.jQuery || document.write('<script src="/resources/jquery.min.js"><\/script>')</script>
-    <script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
+    
     <script src='<c:url value="/resources/js/holder.min.js"/>'></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
     <script src='<c:url value="/resources/js/ie10-viewport-bug-workaround.js"/>'></script>
-    <script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>
     <script src='<c:url value="/resources/js/busca-endereco.js"/>'></script>	
 	</body>
 </html>
