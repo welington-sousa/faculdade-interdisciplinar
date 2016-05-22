@@ -5,8 +5,8 @@ import java.math.BigDecimal;
 public class ItemCompra {
 
 	private Camisa camisa;
-	private Cor cor;
 	private int quantidade;
+	private Cor cor;
 
 	public ItemCompra() {
 	}
