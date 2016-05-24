@@ -18,12 +18,12 @@
 	
 		<thead>
 			<tr>
-				<th>Produto</th>
-				<th>Item</th>
-				<th>Preço</th>
+				<th>Camisa</th>
+				<th>Nome</th>
+				<th>Valor unitário</th>
 				<th>Qtd</th>
 				<th>Total</th>
-				<th>Ação</th>
+				<th></th>
 			</tr>
 		</thead>
 		
@@ -34,13 +34,13 @@
 						<img width="70" height="85" class="img-thumbnail img-resposive" src="resources/img/camisas/estampa${item.camisa.id}-${item.cor.verde}.png" alt="${item.camisa.nome}">
 					</td>
 					<td class="table-carrinho-item">${item.camisa.nome}</td>
-					<td class="table-carrinho-item"><fmt:formatNumber type="currency" value="${item.camisa.valorUnitario}" /></td>
+					<td class="table-carrinho-item"><fmt:formatNumber type="currency" value="${item.camisa.valorUnitario}"/></td>
 					<td class="table-carrinho-item">
-						<input type="hidden" name="item.camisa.id" value="${camisa.id}" />
+						<input type="hidden" name="item.camisa.id" value="${camisa.id}"/>
 						<input style="width: 25%; display: inherit;" class="form-control" name="item.quantidade" value="1" required type="number">
 					</td>
-					<td class="table-carrinho-item"><fmt:formatNumber type="currency" value="${item.quantidade * item.valor}" /></td>
-					<td class="table-carrinho-item">
+					<td class="table-carrinho-item"><fmt:formatNumber type="currency" value="${item.quantidade * item.camisa.valorUnitario}"/></td>
+					<td align="center" class="table-carrinho-item">
 						<form action='<c:url value="/carrinho/${s.index}" />' method="POST">
 							<button class="comprar btn-danger" data-toggle="modal" data-target="#myModal">
 								<span class="glyphicon glyphicon-trash"></span>
@@ -83,7 +83,7 @@
 				    	<span class="glyphicon glyphicon-refresh"></span> Atualizar Total
 					</button>
 				</td>
-				<td><fmt:formatNumber type="currency" value="${item.camisa.valorUnitario}" /></td>
+				<td><p></p><fmt:formatNumber type="currency" value="${item.quantidade * item.valor}"/></td>
 				<td></td> 
 			</tr>
 		</tfoot>

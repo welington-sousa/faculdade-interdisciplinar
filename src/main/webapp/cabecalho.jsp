@@ -37,7 +37,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a href='${linkTo[HomeController].index}' class="navbar-brand">
-						<span title="camisas criativas" class="glyphicon glyphicon-home"></span>
+						<span title="camisas criativas"> Camisas Criativas</span>
 					</a>
 					<a href='${linkTo[CamisasController].musicas}' class="navbar-brand">
 						<span class="glyphicon glyphicon-music"> Música</span>

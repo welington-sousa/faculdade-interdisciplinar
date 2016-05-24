@@ -38,10 +38,10 @@
 					<img src="../resources/img/camisas/estampa${camisa.id}-verde.png" width="370" height="48" alt="Produto da cor verde" style="position: absolute; left: -350px;">
 				</label> 
 				
-				<input type="radio" name="cor" value="rosa" id="vermelha"> 
+				<input type="radio" name="cor" value="vermelha" id="vermelha"> 
 				
 				<label for="vermelha"> 
-					<img src="../resources/img/camisas/estampa${camisa.id}-vermelha.png" width="370" height="48" alt="Produto da cor rosa" style="position: absolute; left: -350px;">
+					<img src="../resources/img/camisas/estampa${camisa.id}-vermelha.png" width="370" height="48" alt="Produto da cor vermelha" style="position: absolute; left: -350px;">
 				</label>
 				
 				<input type="radio" name="cor" value="azul" id="azul"> 
