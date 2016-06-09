@@ -66,6 +66,17 @@ public class CarrinhoDeComprasTest {
 		assertEquals(item, carrinho.getItens().get(0));
 	}
 
+	@Test
+	public void deveRemoverItensDoCarrinhoDeCompras() {
+		// ItemCompra item = new ItemCompra(computacao, 2);
+		// carrinho.adiciona(item);
+		// Integer indiceItem = carrinho.getItens().size();
+		// carrinho.remove(indiceItem);
+		//
+		// assertEquals(0, carrinho.getItens().size());
+		// assertEquals(indiceItem, carrinho.getItens());
+	}
+
 	private double encontraNo(CarrinhoDeCompras carrinho) {
 		return carrinho.getItens().get(0).getCamisa().getValorUnitario().doubleValue();
 	}

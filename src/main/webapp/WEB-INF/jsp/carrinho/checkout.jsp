@@ -78,12 +78,8 @@
 						</button>
 					</a>	
 				</td>
-				<td>
-					<button data-target="#modalCalcularFrete" data-toggle="modal" class="btn btn-default">
-				    	<span class="glyphicon glyphicon-refresh"></span> Atualizar Total
-					</button>
-				</td>
-				<td><p></p><fmt:formatNumber type="currency" value="${item.quantidade * item.valor}"/></td>
+				<td><p></p><b>Total:</b></td>
+				<td><p></p><b><fmt:formatNumber type="currency" value="${carrinho.total}"/></b></td>
 				<td></td> 
 			</tr>
 		</tfoot>

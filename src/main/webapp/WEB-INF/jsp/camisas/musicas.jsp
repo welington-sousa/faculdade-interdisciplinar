@@ -13,6 +13,9 @@
 		<div class="col-md-8">
 			<div class="form-group">
 				<section class="secao novidades">
+				
+					<h2 class="glyphicon glyphicon-music"> Música</h2>
+					
 					<ol>
 						<c:forEach var="camisa" items="${camisaList}"> 
 							<li>

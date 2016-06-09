@@ -39,30 +39,30 @@
 		</div>
 	</div>
 
-	<form method="post" action="/camisascriativas/pagamento/finalizado" role="form">
+	<form method="post" action='${linkTo[ComprasController].sucesso}' role="form">
 		<div class="col-md-8">
 			<h4>Suas informações</h4>
 			
 			<div class="form-group">
-				<input type="email" class="form-control" id="email" placeholder="E-mail" autofocus required>
+				<input type="email" class="form-control" id="email" placeholder="E-mail" x-moz-errormessage="Email inválido" autofocus required>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
-						<input type="text" id="nome" class="form-control" placeholder="Nome" required>
+						<input type="text" id="nome" class="form-control" placeholder="Nome" x-moz-errormessage="O campo nome não pode ser vazio" required>
 					</div>
 				</div>
 
 				<div class="col-md-6">
 					<div class="form-group">
-						<input type="text" id="sobrenome" class="form-control" placeholder="Sobrenome" required>
+						<input type="text" id="sobrenome" class="form-control" placeholder="Sobrenome" x-moz-errormessage="O campo sobrenome não pode ser vazio" required>
 					</div>
 				</div>
 			</div>
 
 			<div class="form-group">
-				<input type="text" class="form-control" id="cpf" placeholder="CPF" data-mask="999.999.999-99" required>
+				<input type="text" class="form-control" id="cpf" placeholder="CPF" data-mask="999.999.999-99" x-moz-errormessage="O campo cpf não pode ser vazio" required>
 			</div>
 
 			<h4>Endereço para entrega</h4>
@@ -70,31 +70,31 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="form-group">
-						<input type="text" class="form-control" id="cep" name="cep" placeholder="Cep" data-mask="99999-999" required>
+						<input type="text" class="form-control" id="cep" name="cep" placeholder="Cep" data-mask="99999-999" x-moz-errormessage="O campo cep não pode ser vazio" required>
 					</div>
 				</div>
 			</div>
 			
 			<div class="form-group">
-				<input type="text" class="form-control" id="rua" placeholder="Rua" required>
+				<input type="text" class="form-control" id="rua" placeholder="Rua" x-moz-errormessage="O campo rua não pode ser vazio" required>
 			</div>
 			
 			<div class="row">
 				<div class="col-md-5">
 					<div class="form-group">
-						<input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+						<input type="text" class="form-control" id="bairro" placeholder="Bairro" x-moz-errormessage="O campo bairro não pode ser vazio" required>
 					</div>
 				</div>
 
 				<div class="col-md-5">
 					<div class="form-group">
-						<input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+						<input type="text" class="form-control" id="cidade" placeholder="Cidade" x-moz-errormessage="O campo cidade não pode ser vazio" required>
 					</div>
 				</div>
   
 	  			<div class="col-md-2">
 					<div class="form-group">
-						<input type="text" id="uf" class="form-control" placeholder="Uf" required>
+						<input type="text" id="uf" class="form-control" placeholder="Uf" x-moz-errormessage="O campo uf não pode ser vazio" required>
 					</div>
 				</div>
 			</div>	
@@ -102,7 +102,7 @@
 			<h4>Cartão de crédito</h4>
 
 			<div class="form-group">
-				<input type="text" class="form-control" id="numero-cartao" placeholder="Número" data-mask="9999 9999 9999 9999 - 999" required>
+				<input type="text" class="form-control" id="numero-cartao" placeholder="Número" data-mask="9999 9999 9999 9999 - 999" x-moz-errormessage="O campo número do cartão não pode ser vazio" required>
 			</div>
 
 			<div class="form-group">
@@ -114,7 +114,7 @@
 			</div>
 
 			<div class="form-group">
-				<input type="month" name="validade-cartao" id="validade-cartao" class="form-control" placeholder="Clique aqui" required>
+				<input type="month" name="validade-cartao" id="validade-cartao" class="form-control" placeholder="Clique aqui" x-moz-errormessage="O campo validade do cartão não pode ser vazio" required>
 			</div>
 
 			<button class="btn btn-primary btn-lg btn-block" type="submit"><span class="glyphicon glyphicon-thumbs-up"></span> Efetivar Pedido 

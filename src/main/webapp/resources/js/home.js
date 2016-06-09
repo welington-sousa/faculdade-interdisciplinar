@@ -1,3 +1,15 @@
+// coloca mensagem do campo de busca em portuquês
+document.querySelector('input[type=search]').oninvalid = function() {
+	// remove mensagens de erro antigas
+	this.setCustomValidity("");
+		// reexecuta validação
+		if (!this.validity.valid) {
+		// se inválido, coloca mensagem de erro
+		this.setCustomValidity("Por favor, preencha este campo");
+	}
+};
+
+// Busca endereço por cep
 $(document).ready(function() {
 
     function limpa_formulário_cep() {
