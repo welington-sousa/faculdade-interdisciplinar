@@ -18,12 +18,13 @@
 		<!-- icone do topo -->
 		<link href='<c:url value="/resources/img/logo.png"/>' rel="shortcut icon" sizes="144x144" />
 		
-		<script src='<c:url value="/resources/js/ie-emulation-modes-warning.js"/>'></script>
+		<script src='<c:url value="/resources/js/ie-emulation-modes-warning.js"/>'></script> 
 		
 		<script src='<c:url value="/resources/js/jquery.min.js"/>'></script>
 		<script src='<c:url value="/resources/js/jquery-ui.js"/>'></script>
 		<script src='<c:url value="/resources/js/bootstrap.min.js"/>'></script>
 		<script src='<c:url value="/resources/js/inputmask-plugin.js"/>'></script>
+		<script src='<c:url value="/resources/js/validator.min.js"/>'></script>
 	</head>
 	
 	<body>
