@@ -75,8 +75,18 @@
 				</div>
 			</div>
 			
-			<div class="form-group">
-				<input type="text" class="form-control" id="rua" placeholder="Rua" x-moz-errormessage="O campo rua não pode ser vazio" required>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="form-group">
+						<input type="text" class="form-control" id="rua" placeholder="Rua" x-moz-errormessage="O campo rua não pode ser vazio" required>
+					</div>
+				</div>
+  
+	  			<div class="col-md-2">
+					<div class="form-group">
+						<input type="text" id="numero" class="form-control" placeholder="755" x-moz-errormessage="O campo número não pode ser vazio" required>
+					</div>
+				</div>
 			</div>
 			
 			<div class="row">
@@ -114,7 +124,7 @@
 			</div>
 
 			<div class="form-group">
-				<input type="month" name="validade-cartao" id="validade-cartao" class="form-control" placeholder="Clique aqui" x-moz-errormessage="O campo validade do cartão não pode ser vazio" required>
+				<input type="month" name="validade-cartao" id="validade-cartao" class="form-control" placeholder="Validade do cartão" x-moz-errormessage="O campo validade do cartão não pode ser vazio" required>
 			</div>
 
 			<button class="btn btn-primary btn-lg btn-block" type="submit"><span class="glyphicon glyphicon-thumbs-up"></span> Efetivar Pedido 
