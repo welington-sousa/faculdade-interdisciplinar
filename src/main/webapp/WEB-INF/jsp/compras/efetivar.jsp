@@ -18,7 +18,7 @@
 		<div class="panel panel-default">
 			<c:forEach items="${carrinho.itens}" var="item" varStatus="s">
 				<div class="panel-body">
-					<img class="img-thumbnail img-resposive" src="../resources/img/camisas/estampa${item.camisa.id}-azul.png" alt="${item.camisa.nome}">
+					<img class="img-thumbnail img-resposive" src="../resources/img/camisas/estampa${item.camisa.id}-verde.png" alt="${item.camisa.nome}">
 
 					<table class="table">
 						<dl>
